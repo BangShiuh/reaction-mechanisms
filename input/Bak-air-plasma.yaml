@@ -1,0 +1,883 @@
+generator: cti2yaml
+cantera-version: 2.5.0a3
+date: Wed, 26 Aug 2020 12:31:59 -0400
+input-files: [Bak-air-plasma.cti]
+
+units: {length: cm, quantity: molec, activation-energy: K}
+
+phases:
+- name: air
+  thermo: ideal-gas
+  elements: [O, N, E]
+  species: [N2, N2(A3), N2(B3), N2(C3), N2(ap), O2, N(2D), N(2P),
+            O, O(1D), O(1S), N, NO, NO2, NO3, N2O, N2O4, N2O5, O3,
+            N2^+, O2^+, N4^+, O4^+, O2^-, O4^-, O3^-, O^-, E,
+            N2O2^+, NO^+]
+  kinetics: gas
+  reactions: all
+  transport: Ion
+  state:
+    T: 300.0
+    P: 1.01325e+05
+
+species:
+- name: N2
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      -1046.97628, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      -923.948688, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.621
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: REFELEMENTG8/02
+- name: N2(A3)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      7.05413015e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      7.06665961e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(B3)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      8.4281052e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      8.4406561e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(C3)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      1.26974077e+05, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      1.2707704e+05, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(ap)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      9.64193789e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      9.65424065e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: O2
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.78245636, -2.99673416e-03, 9.84730201e-06, -9.68129509e-09, 3.24372837e-12,
+      -1063.94356, 3.65767573]
+    - [3.66096065, 6.56365811e-04, -1.41149627e-07, 2.05797935e-11, -1.29913436e-15,
+      -1215.97718, 3.41536279]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.458
+    well-depth: 107.4
+    polarizability: 1.6
+    rotational-relaxation: 3.8
+  note: REFELEMENTRUS89
+- name: O2(a1)
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.78535371, -3.2192854e-03, 1.12323443e-05, -1.17254068e-08, 4.17659585e-12,
+      1.02922572e+04, 3.27320239]
+    - [3.45852381, 1.04045351e-03, -2.79664041e-07, 3.11439672e-11, -8.55656058e-16,
+      1.02229063e+04, 4.15264119]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.458
+    well-depth: 107.4
+    polarizability: 1.6
+    rotational-relaxation: 3.8
+  note: ATcT/A
+- name: O2(b1)
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.78245636, -2.99673416e-03, 9.84730201e-06, -9.68129509e-09, 3.24372837e-12,
+      1.78166089e+04, 3.65767573]
+    - [3.66096065, 6.56365811e-04, -1.41149627e-07, 2.05797935e-11, -1.29913436e-15,
+      1.76645752e+04, 3.41536279]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.458
+    well-depth: 107.4
+    polarizability: 1.6
+    rotational-relaxation: 3.8
+  note: Thermo data from DeFilippo & Chen 2016
+- name: O
+  composition: {O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.1682671, -3.27931884e-03, 6.64306396e-06, -6.12806624e-09, 2.11265971e-12,
+      2.91222592e+04, 2.05193346]
+    - [2.54363697, -2.73162486e-05, -4.1902952e-09, 4.95481845e-12, -4.79553694e-16,
+      2.9226012e+04, 4.92229457]
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 2.75
+    well-depth: 80.0
+  note: L1/90
+- name: O(1D)
+  composition: {O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.49993786, 1.71935346e-07, -3.45215267e-10, 3.71342028e-13, -1.70964494e-16,
+      5.19965317e+04, 4.61684555]
+    - [2.49368475, 1.37617903e-05, -1.00401058e-08, 2.76012182e-12, -2.01597513e-16,
+      5.19986304e+04, 4.6505095]
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 2.485
+    well-depth: 235.686
+    polarizability: 0.744
+  note: Thermo data from DeFilippo & Chen 2016 same as HP-mech
+- name: O(1S)
+  composition: {O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.1682671, -3.27931884e-03, 6.64306396e-06, -6.12806624e-09, 2.11265971e-12,
+      7.76291487e+04, 2.05193346]
+    - [2.54363697, -2.73162486e-05, -4.1902952e-09, 4.95481845e-12, -4.79553694e-16,
+      7.77329015e+04, 4.92229457]
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 2.75
+    well-depth: 80.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N(2D)
+  composition: {N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, 8.38525847e+04, 4.1939088]
+    - [2.4159429, 1.7489065e-04, -1.1902369e-07, 3.0226244e-11, -2.0360983e-15,
+      8.38817217e+04, 4.6496095]
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 3.298
+    well-depth: 71.4
+  note: thermal data from Burcat
+- name: N(2P)
+  composition: {N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, 9.75002574e+04, 4.1939088]
+    - [2.4159429, 1.7489065e-04, -1.1902369e-07, 3.0226244e-11, -2.0360983e-15,
+      9.75293944e+04, 4.6496095]
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 3.298
+    well-depth: 71.4
+  note: thermal data from Burcat
+- name: O3
+  composition: {O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.40738221, 2.05379063e-03, 1.38486052e-05, -2.23311542e-08, 9.76073226e-12,
+      1.58644979e+04, 8.2824758]
+    - [12.3302914, -0.0119324783, 7.98741278e-06, -1.77194552e-09, 1.26075824e-13,
+      1.26755831e+04, -40.8823374]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 4.1
+    well-depth: 180.0
+    rotational-relaxation: 2.0
+  note: L5/90
+- name: N
+  composition: {N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, 5.6104638e+04, 4.1939088]
+    - [2.4159429, 1.7489065e-04, -1.1902369e-07, 3.0226244e-11, -2.0360983e-15,
+      5.6133775e+04, 4.6496095]
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 3.298
+    well-depth: 71.4
+  note: thermal data from Burcat
+- name: NO
+  composition: {N: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [4.2184763, -4.638976e-03, 1.1041022e-05, -9.3361354e-09, 2.803577e-12,
+      9844.623, 2.2808464]
+    - [3.2606056, 1.1911043e-03, -4.2917048e-07, 6.9457669e-11, -4.0336099e-15,
+      9920.9746, 6.3693027]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.621
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: GRI 3.0
+- name: NO2
+  composition: {N: 1, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.9440312, -1.585429e-03, 1.6657812e-05, -2.0475426e-08, 7.8350564e-12,
+      2896.6179, 6.3119917]
+    - [4.8847542, 2.1723956e-03, -8.2806906e-07, 1.574751e-10, -1.0510895e-14,
+      2316.4983, -0.11741695]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 3.5
+    well-depth: 200.0
+    rotational-relaxation: 1.0
+  note: GRI 3.0
+- name: NO3
+  composition: {N: 1, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.1735933, 0.0104902685, 1.10472669e-05, -2.81561867e-08, 1.3658396e-11,
+      7812.90905, 14.602209]
+    - [7.48347702, 2.57772064e-03, -1.00945831e-06, 1.72314063e-10, -1.07154008e-14,
+      6129.90474, -14.1618136]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 3.5
+    well-depth: 200.0
+    rotational-relaxation: 1.0
+  note: Thermal data from Burcat. Transport assume same as NO2.
+- name: N2O
+  composition: {N: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.2571502, 0.011304728, -1.3671319e-05, 9.6819806e-09, -2.9307182e-12,
+      8741.7744, 10.757992]
+    - [4.8230729, 2.6270251e-03, -9.5850874e-07, 1.6000712e-10, -9.7752303e-15,
+      8073.4048, -2.2017207]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.828
+    well-depth: 232.4
+    rotational-relaxation: 1.0
+  note: L 7/88
+- name: N2O4
+  composition: {N: 2, O: 4}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.02002271, 0.0295904359, -3.01342572e-05, 1.42360526e-08, -2.44100411e-12,
+      -679.238803, 11.805962]
+    - [11.5752932, 4.01615532e-03, -1.57178022e-06, 2.68273657e-10, -1.66921538e-14,
+      -2961.11235, -31.9488625]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 3.5
+    well-depth: 200.0
+    rotational-relaxation: 1.0
+  note: Thermal data from Burcat. Transport assume same as NO2.
+- name: N2O5
+  composition: {N: 2, O: 5}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.68767456, 0.0392120802, -5.53770082e-05, 4.20097925e-08, -1.31260758e-11,
+      -573.270648, 12.1967861]
+    - [13.1108043, 4.8743638e-03, -1.87548689e-06, 3.16374735e-10, -1.95927279e-14,
+      -2859.32484, -34.6877475]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 3.5
+    well-depth: 200.0
+    rotational-relaxation: 1.0
+  note: Thermal data from Burcat. Transport assume same as NO2.
+- name: N2^+
+  composition: {E: -1, N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [3.77540711, -2.06459157e-03, 4.75752301e-06, -3.15664228e-09, 6.70509973e-13,
+      1.80481115e+05, 2.69322178]
+    - [3.58661363, 2.53071949e-04, 1.84778214e-07, -4.55257223e-11, 3.26818029e-15,
+      1.80390994e+05, 3.09584143]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 2.75
+    well-depth: 80.0
+  note: tpis89
+- name: O2^+
+  composition: {E: -1, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [4.61017167, -6.35951952e-03, 1.42425624e-05, -1.20997923e-08, 3.70956878e-12,
+      1.39742229e+05, -0.201326941]
+    - [3.31675922, 1.11522244e-03, -3.83492556e-07, 5.72784687e-11, -2.77648381e-15,
+      1.39876823e+05, 5.44726469]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 2.75
+    well-depth: 80.0
+  note: thermal data from Burcat
+- name: N4^+
+  composition: {E: -1, N: 4}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [3.32596515, 0.0143909181, -1.56797253e-05, 9.52287848e-09, -2.53566648e-12,
+      2.15553183e+05, 7.8229064]
+    - [7.05285816, 2.91094469e-03, -1.11573999e-06, 1.87883944e-10, -1.15769013e-14,
+      2.14540545e+05, -11.2429353]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 3.5
+    well-depth: 200.0
+    rotational-relaxation: 1.0
+  note: thermal data from Burcat
+- name: O4^+
+  composition: {E: -1, O: 4}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [1.15107802, 0.0215570328, -2.10270939e-05, 8.21140809e-09, -6.4976098e-13,
+      1.72530097e+05, 18.1430748]
+    - [7.57784346, 2.48052052e-03, -9.7113343e-07, 1.65738251e-10, -1.0304774e-14,
+      1.70839793e+05, -14.6808901]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 3.5
+    well-depth: 200.0
+    rotational-relaxation: 1.0
+  note: thermal data from Burcat
+- name: O^-
+  composition: {E: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [2.90805921, -1.69804907e-03, 2.98069955e-06, -2.43835127e-09, 7.61229311e-13,
+      1.14357717e+04, 2.80339097]
+    - [2.54474869, -4.66695513e-05, 1.84912357e-08, -3.18159223e-12, 1.98962956e-16,
+      1.15042089e+04, 4.52131015]
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 3.33
+    well-depth: 136.5
+    polarizability: 1.424
+  note: g1/97
+- name: O2^-
+  composition: {E: 1, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [3.66442522, -9.28741138e-04, 6.45477082e-06, -7.7470338e-09, 2.93332662e-12,
+      -6870.76983, 4.35140681]
+    - [3.95666294, 5.98141823e-04, -2.12133905e-07, 3.63267581e-11, -2.24989228e-15,
+      -7062.87229, 2.27871017]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.33
+    well-depth: 136.5
+    polarizability: 1.424
+  note: L4/89
+- name: O3^-
+  composition: {E: 1, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [1.90241113, 0.0156105437, -2.09605956e-05, 1.35889864e-08, -3.46558506e-12,
+      -9165.17169, 15.1033864]
+    - [5.95188221, 1.08039003e-03, -4.24642763e-07, 7.26564042e-11, -4.52533445e-15,
+      -1.0108013e+04, -4.96701318]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 3.5
+    well-depth: 200.0
+    rotational-relaxation: 1.0
+  note: Burcat thermo-data
+- name: O4^-
+  composition: {E: 1, O: 4}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [3.76742717, 0.0152352066, -1.67050863e-05, 8.99679984e-09, -1.92867534e-12,
+      -1.33342585e+04, 6.42680556]
+    - [8.00618937, 2.0202758e-03, -7.86172513e-07, 1.33669567e-10, -8.29026235e-15,
+      -1.44401544e+04, -15.123772]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 3.5
+    well-depth: 200.0
+    rotational-relaxation: 1.0
+  note: Burcat thermo-data
+- name: N2O2^+
+  composition: {E: -1, N: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [3.77540711, -2.06459157e-03, 4.75752301e-06, -3.15664228e-09, 6.70509973e-13,
+      1.80481115e+05, 2.69322178]
+    - [3.58661363, 2.53071949e-04, 1.84778214e-07, -4.55257223e-11, 3.26818029e-15,
+      1.80390994e+05, 3.09584143]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 3.5
+    well-depth: 200.0
+    rotational-relaxation: 1.0
+  note: thermal data assume same as N2^+
+- name: NO^+
+  composition: {N: 1, O: 1, E: -1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.15, 1000.0, 6000.0]
+    data:
+    - [3.69301231, -1.34229158e-03, 2.67343395e-06, -1.02609308e-09, -6.95610492e-14,
+      1.18103055e+05, 3.09126698]
+    - [2.94587702, 1.4032526e-03, -4.95503196e-07, 7.95948973e-11, -4.72076668e-15,
+      1.1824434e+05, 6.70644641]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 2.75
+    well-depth: 80.0
+- name: E
+  composition: {E: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, -11.7246902]
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, -11.7246902]
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 2.05
+    well-depth: 145.0
+    polarizability: 0.667
+  note: The transport parameters are not used in IonGasTransport
+- name: N2(v1)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      2306.72971, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      2442.56261, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v2)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      5740.04271, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      5923.9753, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v3)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      9133.5522, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      9289.33839, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v4)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      1.25270617e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      1.26547013e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v5)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      1.59202231e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      1.61361116e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v6)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      1.93133844e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      1.9501474e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v7)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      2.27065458e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      2.2982884e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v8)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      2.60997071e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      2.6348247e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+
+reactions:
+# =========================================
+#      electron collision processes
+# =========================================
+- equation: N2 + E => N2(A3) + E  # R1
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2 + E => N2(B3) + E  # R2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2 + E => N2(ap) + E  # R3
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2 + E => N2(C3) + E  # R4
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2 + E => O + O + E  # R5
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2 + E => O + O(1D) + E  # R6
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2 + E => N2^+ + E + E  # R7
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2 + E => O2^+ + E + E  # R8
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2 + E => O^- + O  # R9
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N + E => N(2D) + E  # R50
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O + E => O(1D) + E  # R51
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O + E => O(1S) + E  # R52
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# =========================================
+#        Reactions for glow discharge
+# =========================================
+- equation: O2^+ + E => O + O  # R10 Kossyi(40)
+  type: electron-temperature
+  rate-constant: {A: 6.0e-5, b: -1.0, Ea-T: 0.0, Ea-Te: 0.0}
+- equation: E + O2 + O2 => O2^- + O2  # R11 Kossyi(45)
+  type: electron-temperature
+  rate-constant: {A: 4.2e-27, b: -1.0, Ea-T: -100, Ea-Te: 700}
+- equation: O2^- + O => O3 + E  # R12 Kossyi(66)
+  rate-constant: {A: 1.5e-10, b: 0.0, Ea: 0.0}
+- equation: O^- + O => O2 + E  # R13 Kossyi(68)
+  rate-constant: {A: 5.0e-10, b: 0.0, Ea: 0.0}
+- equation: O3^- + O => O2 + O2 + E  # R14 Kossyi(70)
+  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
+- equation: O2^- + N2 => O2 + E + N2  # R15 Kossyi(56)
+  rate-constant: {A: 1.097e-13, b: 0.5, Ea: 4990}
+- equation: O2^- + O2 => O2 + E + O2  # R16 Kossyi(57)
+  rate-constant: {A: 1.559e-11, b: 0.5, Ea: 5590}
+- equation: O3 + O => O2 + O2  # R17 Kossyi(82)
+  rate-constant: {A: 2.0e-11, b: 0.0, Ea: 2300}
+- equation: O + O2 + N2 => O3 + N2  # R18-1 Kossyi(94)
+  rate-constant: {A: 5.58e-29, b: -2.0, Ea: 0.0}
+- equation: O + O2 + O2 => O3 + O2  # R18-2 Kossyi(95)
+  rate-constant: {A: 8.615e-31, b: -1.25, Ea: 0.0}
+- equation: N2(A3) + O2 => N2 + O + O  # R19 Kossyi(100)
+  rate-constant: {A: 2.54e-12, b: 0.0, Ea: 0.0}
+- equation: N2(A3) + O2 => N2O + O  # R20 Kossyi(101)
+  rate-constant: {A: 7.8e-14, b: 0.0, Ea: 0.0}
+- equation: N2(A3) + O2 => N2 + O2  # R21 Kossyi(106)
+  rate-constant: {A: 1.29e-12, b: 0.0, Ea: 0.0}
+- equation: N2(B3) + N2 => N2(A3) + N2  # R22 Kossyi(110)
+  rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
+- equation: N2(B3) + O2 => N2 + O + O  # R23 Kossyi(113)
+  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
+- equation: N2(ap) + N2 => N2(B3) + N2  # R24 Kossyi(114)
+  rate-constant: {A: 2.0e-13, b: 0.0, Ea: 0.0}
+- equation: N2(ap) + O2 => N2 + O + O  # R25 Kossyi(115)
+  rate-constant: {A: 2.8e-11, b: 0.0, Ea: 0.0}
+- equation: N2(C3) => N2(B3)  # R26 Kossyi(117)
+  rate-constant: {A: 3.0e+07, b: 0.0, Ea: 0.0}
+- equation: N2(C3) + N2 => N2(ap) + N2  # R27 Kossyi(118)
+  rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
+- equation: N2(C3) + O2 => N2 + O + O(1S)  # R28 Kossyi(119)
+  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
+- equation: O(1D) + N2 => O + N2  # R29 Kossyi(144)
+  rate-constant: {A: 1.8e-11, b: 0.0, Ea: -107}
+- equation: O(1D) + O2 => O + O2  # R30 Kossyi(145)
+  rate-constant: {A: 2.56e-11, b: 0.0, Ea: -67}
+- equation: N2^+ + N2 + N2 => N4^+ + N2  # R31 Kossyi(165)
+  rate-constant: {A: 5.0e-29, b: 0.0, Ea: 0.0}
+- equation: O2^+ + N2 + N2 => N2O2^+ + N2  # R32 Kossyi(168)
+  rate-constant: {A: 8.1e-26, b: -2.0, Ea: 0.0}
+- equation: O2^+ + O2 + O2 => O4^+ + O2  # R33 Kossyi(167)
+  rate-constant: {A: 2.028e-22, b: -3.2, Ea: 0.0}
+- equation: N4^+ + O2 => O2^+ + N2 + N2  # R34 Kossyi(222)
+  rate-constant: {A: 2.5e-10, b: 0.0, Ea: 0.0}
+- equation: O4^+ + N2 => N2O2^+ + O2  # R35 Kossyi(226)
+  rate-constant: {A: 2.957e-18, b: 2.5, Ea: 2650}
+- equation: O4^+ + O2 => O2^+ + O2 + O2  # R36 Kossyi(227)
+  rate-constant: {A: 2.673e+04, b: -4.0, Ea: 5030}
+- equation: N2O2^+ + N2 => O2^+ + N2 + N2  # R37 Kossyi(231)
+  rate-constant: {A: 1.48e+07, b: -5.3, Ea: 2357}
+- equation: N2O2^+ + O2 => O4^+ + N2  # R38 Kossyi(232)
+  rate-constant: {A: 1.0e-09, b: 0.0, Ea: 0.0}
+- equation: O2^- + O2 + M => O4^- + M  # R39 Kossyi(234)
+  type: three-body
+  rate-constant: {A: 1.05e-28, b: -1.0, Ea: 0.0}
+  efficiencies: {N2: 1.0, O2: 1.0}
+- equation: O2^- + O => O2 + O^-  # R40 Kossyi(237)
+  rate-constant: {A: 3.3e-10, b: 0.0, Ea: 0.0}
+- equation: O3^- + O => O2^- + O2  # R41 Kossyi(247)
+  rate-constant: {A: 3.2e-10, b: 0.0, Ea: 0.0}
+- equation: O^- + O2 + M => O3^- + M  # R42 Kossyi(235)
+  type: three-body
+  rate-constant: {A: 3.3e-28, b: -1.0, Ea: 0.0}
+  efficiencies: {N2: 1.0, O2: 1.0}
+- equation: O4^- + M => O2^- + O2 + M  # R43 Kossyi(262)
+  type: three-body
+  rate-constant: {A: 1.0e-10, b: 0.0, Ea: 1044}
+  efficiencies: {N2: 1.0, O2: 1.0}
+
+# ========================================================
+#  Kossyi 2.7 Recombination of positive and negative ions
+# ========================================================
+- equation: O2^- + O2^+ => O2 + O2  # R44 (type 1)
+  rate-constant: {A: 3.464e-06, b: -0.5, Ea: 0.0}
+- equation: O^- + O2^+ => O + O2  # R45 (type 1)
+  rate-constant: {A: 3.464e-06, b: -0.5, Ea: 0.0}
+- equation: O3^- + O2^+ => O3 + O2  # R46 (type 1)
+  rate-constant: {A: 3.464e-06, b: -0.5, Ea: 0.0}
+- equation: O2^- + O2^+ => O2 + O + O  # R47 (type 2 & 3)
+  rate-constant: {A: 1.0e-07, b: 0.0, Ea: 0.0}
+- equation: O3^- + O2^+ => O3 + O + O  # R48 (type 2 & 3)
+  rate-constant: {A: 1.0e-07, b: 0.0, Ea: 0.0}
+- equation: O2^- + O2^+ + M => O2 + O2 + M  # R49 (type 5)
+  type: three-body
+  rate-constant: {A: 3.118e-19, b: -2.5, Ea: 0.0}
+  efficiencies: {N2: 1.0, O2: 1.0, N: 1.0, O: 1.0}
+
+# ==============================================
+#    Additional reactions for spark discharge
+# ==============================================
+- equation: N2^+ + E => N + N  # R53 Kossyi(38)
+  type: electron-temperature
+  rate-constant: {A: 4.85e-06, b: -0.5, Ea-T: 0.0, Ea-Te: 0.0}
+- equation: N2^+ + E <=> N + N(2D)  # R54 Kossyi(39)
+  type: electron-temperature
+  rate-constant: {A: 3.46e-06, b: -0.5, Ea-T: 0.0, Ea-Te: 0.0}
+- equation: N4^+ + E <=> 2 N2 # R55 Kossyi (29)
+  type: electron-temperature
+  rate-constant: {A: 3.46e-5, b: -0.5, Ea-T: 0.0, Ea-Te: 0.0}
+- equation: NO^+ + E <=> N(2D) + O # R56 Kossyi (41)
+  type: electron-temperature
+  rate-constant: {A: 2.08e-3, b: -1.5, Ea-T: 0.0, Ea-Te: 0.0}
+- equation: N2(A3) + N2(ap) => N4^+ + E # R57 Kossyi (25)
+  rate-constant: {A: 5.00e-11, b: 0.0, Ea: 0.0}
+- equation: N2(ap) + N2(ap) => N4^+ + E # R58 Kossyi (26)
+  rate-constant: {A: 2.00e-10, b: 0.0, Ea: 0.0}
+- equation: N + O2 <=> NO + O  # R59 Kossyi(74)
+  rate-constant: {A: 1.1e-14, b: 1.0, Ea: 3150}
+- equation: N + NO <=> N2 + O  # R60 Kossyi(76)
+  rate-constant: {A: 1.05e-12, b: 0.5, Ea: 0.0}
+- equation: N2(A3) + O => NO + N(2D)  # R61 Kossyi(102)
+  rate-constant: {A: 7.0e-12, b: 0.0, Ea: 0.0}
+- equation: N2(A3) + O => N2 + O(1S)  # R62 Kossyi(108)
+  rate-constant: {A: 2.1e-11, b: 0.0, Ea: 0.0}
+- equation: N2(A3) + N => N2 + N(2P)  # R63 Kossyi(107)?
+  rate-constant: {A: 1.79e-19, b: -0.67, Ea: 0.0}
+- equation: N2(A3) + NO => N2 + NO  # R64 Kossyi(109)
+  rate-constant: {A: 7.0e-11, b: 0.0, Ea: 0.0}
+- equation: N2(ap) + NO => N2 + N + O  # R65 Kossyi(116)
+  rate-constant: {A: 3.6e-10, b: 0.0, Ea: 0.0}
+- equation: N(2D) + O2 => NO + O  # R66 Kossyi(140)
+  rate-constant: {A: 2.6e-12, b: 0.0, Ea: 0.0}
+- equation: N(2D) + O2 => NO + O(1D)  # R67 Kossyi(136)
+  rate-constant: {A: 3.46e-13, b: 0.5, Ea: 0.0}
+- equation: N(2P) + O2 => NO + O  # R68 Kossyi(140)
+  rate-constant: {A: 2.6e-12, b: 0.0, Ea: 0.0}
+- equation: O(1D) + NO => N + O2  # R69 Kossyi(149)
+  rate-constant: {A: 1.7e-10, b: 0.0, Ea: 0.0}
+- equation: O(1S) + O => O(1D) + O  # R71 Kossyi(164)
+  rate-constant: {A: 5.0e-11, b: 0.0, Ea: 301}
+- equation: N4^+ + N2 => N2^+ + 2 N2 # R72 Kossyi(221) special formula
+  rate-constant: {A: 3.80e-15, b: 0.0, Ea: 0.0}
+- equation: O2^+ + NO => NO^+ + O2 # R73 Kossyi (208)
+  rate-constant: {A: 4.40e-10, b: 0.0, Ea: 0.0}
