@@ -1,0 +1,637 @@
+# =====================================================================================
+#     This reaction mechanism is composition of Adamovich (neutrals) and Popov (ions).
+# =====================================================================================
+units: {length: cm, quantity: molec, activation-energy: K}
+
+phases:
+- name: gas
+  thermo: ideal-gas
+  elements: [O, N, E]
+  species:
+  - species: [O, N, E, O2, O2(v1), O2(v2), O2(v3), O2(v4),
+             N2, N2(v1), N2(v2), N2(v3), N2(v4), N2(v5), N2(v6), N2(v7), N2(v8)]
+  kinetics: gas
+  reactions:
+  - reactions: all
+  transport: Ion
+  state:
+    T: 300.0
+    P: 1.01325e+05
+
+species:
+- name: N2
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      -1046.97628, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      -923.948688, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.621
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: REFELEMENTG8/02
+- name: O2
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.78245636, -2.99673416e-03, 9.84730201e-06, -9.68129509e-09, 3.24372837e-12,
+      -1063.94356, 3.65767573]
+    - [3.66096065, 6.56365811e-04, -1.41149627e-07, 2.05797935e-11, -1.29913436e-15,
+      -1215.97718, 3.41536279]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.069
+    well-depth: 676.424
+    polarizability: 1.487
+    rotational-relaxation: 3.8
+  note: ATcT
+- name: O
+  composition: {O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.1682671, -3.27931884e-03, 6.64306396e-06, -6.12806624e-09, 2.11265971e-12,
+      2.91222592e+04, 2.05193346]
+    - [2.54363697, -2.73162486e-05, -4.1902952e-09, 4.95481845e-12, -4.79553694e-16,
+      2.9226012e+04, 4.92229457]
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 2.485
+    well-depth: 235.686
+    polarizability: 0.744
+  note: ATcT
+- name: N
+  composition: {N: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, 5.6104637e+04, 4.1939087]
+    - [2.4159429, 1.7489065e-04, -1.1902369e-07, 3.0226245e-11, -2.0360982e-15,
+      5.6133773e+04, 4.6496096]
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 3.298
+    well-depth: 71.4
+  note: L 6/88
+- name: E
+  composition: {E: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, -11.7246902]
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, -11.7246902]
+  transport:
+    model: gas
+    geometry: atom
+    diameter: 2.05
+    well-depth: 145.0
+    polarizability: 0.667
+  note: The transport parameters are not used in IonGasTransport
+- name: O2(v1)
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.78245636, -2.99673416e-03, 9.84730201e-06, -9.68129509e-09, 3.24372837e-12,
+      1209.38171, 3.65767573]
+    - [3.66096065, 6.56365811e-04, -1.41149627e-07, 2.05797935e-11, -1.29913436e-15,
+      1184.90309, 3.41536279]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.069
+    well-depth: 676.424
+    polarizability: 1.487
+    rotational-relaxation: 3.8
+- name: O2(v2)
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.78245636, -2.99673416e-03, 9.84730201e-06, -9.68129509e-09, 3.24372837e-12,
+      3482.70699, 3.65767573]
+    - [3.66096065, 6.56365811e-04, -1.41149627e-07, 2.05797935e-11, -1.29913436e-15,
+      3458.2638, 3.41536279]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.069
+    well-depth: 676.424
+    polarizability: 1.487
+    rotational-relaxation: 3.8
+- name: O2(v3)
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.78245636, -2.99673416e-03, 9.84730201e-06, -9.68129509e-09, 3.24372837e-12,
+      5757.19271, 3.65767573]
+    - [3.66096065, 6.56365811e-04, -1.41149627e-07, 2.05797935e-11, -1.29913436e-15,
+      5732.78509, 3.41536279]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.069
+    well-depth: 676.424
+    polarizability: 1.487
+    rotational-relaxation: 3.8
+- name: O2(v4)
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.78245636, -2.99673416e-03, 9.84730201e-06, -9.68129509e-09, 3.24372837e-12,
+      8030.51799, 3.65767573]
+    - [3.66096065, 6.56365811e-04, -1.41149627e-07, 2.05797935e-11, -1.29913436e-15,
+      7615.0673, 3.41536279]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.069
+    well-depth: 676.424
+    polarizability: 1.487
+    rotational-relaxation: 3.8
+- name: N2(v1)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      2306.72971, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      2442.56261, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v2)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      5740.04271, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      5923.9753, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v3)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      9133.5522, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      9289.33839, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v4)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      1.25270617e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      1.26547013e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v5)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      1.59202231e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      1.61361116e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v6)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      1.93133844e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      1.9501474e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v7)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      2.27065458e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      2.2982884e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v8)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      2.60997071e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      2.6348247e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: Thermo data from DeFilippo & Chen 2016
+
+reactions:
+
+# ========================================
+#          Vibrational excitation
+# ========================================
+# # ground state
+# - equation: N2 + E => N2(v1) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v2) + E # Reaction 2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v3) + E # Reaction 3
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v4) + E # Reaction 4
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v5) + E # Reaction 5
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v6) + E # Reaction 6
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v7) + E # Reaction 7
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v8) + E # Reaction 8
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# # N2(v1)
+# - equation: N2(v1) + E => N2(v2) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v1) + E => N2(v3) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v1) + E => N2(v4) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v1) + E => N2(v5) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v1) + E => N2(v6) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v1) + E => N2(v7) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v1) + E => N2(v8) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# # N2(v2)
+# - equation: N2(v2) + E => N2(v3) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v2) + E => N2(v4) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v2) + E => N2(v5) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v2) + E => N2(v6) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v2) + E => N2(v7) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v2) + E => N2(v8) + E # Reaction 1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# ========================================
+#         Vibrational relaxation
+# ========================================
+- equation: N2(v1) + M => N2 + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O: 1.0, N: 1.0}
+  duplicate: true
+- equation: N2(v2) + M => N2(v1) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O: 1.0, N: 1.0}
+  duplicate: true
+- equation: N2(v3) + M => N2(v2) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O: 1.0, N: 1.0}
+  duplicate: true
+- equation: N2(v4) + M => N2(v3) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O: 1.0, N: 1.0}
+  duplicate: true
+- equation: N2(v5) + M => N2(v4) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O: 1.0, N: 1.0}
+  duplicate: true
+- equation: N2(v6) + M => N2(v5) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O: 1.0, N: 1.0}
+  duplicate: true
+- equation: N2(v7) + M => N2(v6) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O: 1.0, N: 1.0}
+  duplicate: true
+- equation: N2(v8) + M => N2(v7) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O: 1.0, N: 1.0}
+  duplicate: true
+
+- equation: N2(v1) + M => N2 + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O2: 1.0, N2: 1.0}
+  duplicate: true
+- equation: N2(v2) + M => N2(v1) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O2: 1.0, N2: 1.0}
+  duplicate: true
+- equation: N2(v3) + M => N2(v2) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O2: 1.0, N2: 1.0}
+  duplicate: true
+- equation: N2(v4) + M => N2(v3) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O2: 1.0, N2: 1.0}
+  duplicate: true
+- equation: N2(v5) + M => N2(v4) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O2: 1.0, N2: 1.0}
+  duplicate: true
+- equation: N2(v6) + M => N2(v5) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O2: 1.0, N2: 1.0}
+  duplicate: true
+- equation: N2(v7) + M => N2(v6) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O2: 1.0, N2: 1.0}
+  duplicate: true
+- equation: N2(v8) + M => N2(v7) + M
+  type: three-body
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+  efficiencies: {O2: 1.0, N2: 1.0}
+  duplicate: true
+
+  # oxygen
+- equation: O2(v1) + N2 => O2 + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2(v2) + N2 => O2(v1) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2(v3) + N2 => O2(v2) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2(v4) + N2 => O2(v3) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2(v1) + O2 => O2 + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2(v2) + O2 => O2(v1) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2(v3) + O2 => O2(v2) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2(v4) + O2 => O2(v3) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2(v1) + O => O2 + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2(v2) + O => O2(v1) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2(v3) + O => O2(v2) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: O2(v4) + O => O2(v3) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# ========================================
+#          Vibrational exchange
+# ========================================
+# nitrogen nitrogen vibrational exchange
+# N2(v1) w = 0
+- equation: N2(v1) + N2(v1) <=> N2 + N2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v2) <=> N2 + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v3) <=> N2 + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v4) <=> N2 + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v5) <=> N2 + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v6) <=> N2 + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v7) <=> N2 + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v2) w = 1
+- equation: N2(v2) + N2(v2) <=> N2(v1) + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v3) <=> N2(v1) + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v4) <=> N2(v1) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v5) <=> N2(v1) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v6) <=> N2(v1) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v7) <=> N2(v1) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v3) w = 2
+- equation: N2(v3) + N2(v3) <=> N2(v2) + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v4) <=> N2(v2) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v5) <=> N2(v2) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v6) <=> N2(v2) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v7) <=> N2(v2) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v4) w = 3
+- equation: N2(v4) + N2(v4) <=> N2(v3) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v5) <=> N2(v3) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v6) <=> N2(v3) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v7) <=> N2(v3) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v5) w = 4
+- equation: N2(v5) + N2(v5) <=> N2(v4) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2(v6) <=> N2(v4) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2(v7) <=> N2(v4) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v6) w = 5
+- equation: N2(v6) + N2(v6) <=> N2(v5) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2(v7) <=> N2(v5) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v7) w = 6
+- equation: N2(v7) + N2(v7) <=> N2(v6) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# Nitrogen Oxygen vibrational exchange
+# N2(v1) w = 0
+- equation: N2(v1) + O2 <=> N2 + O2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + O2(v1) <=> N2 + O2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + O2(v2) <=> N2 + O2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + O2(v3) <=> N2 + O2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v2) w = 1
+- equation: N2(v2) + O2 <=> N2(v1) + O2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + O2(v1) <=> N2(v1) + O2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + O2(v2) <=> N2(v1) + O2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + O2(v3) <=> N2(v1) + O2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v3) w = 2
+- equation: N2(v3) + O2 <=> N2(v2) + O2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + O2(v1) <=> N2(v2) + O2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + O2(v2) <=> N2(v2) + O2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + O2(v3) <=> N2(v2) + O2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v4) w = 3
+- equation: N2(v4) + O2 <=> N2(v3) + O2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + O2(v1) <=> N2(v3) + O2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + O2(v2) <=> N2(v3) + O2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + O2(v3) <=> N2(v3) + O2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v5) w = 4
+- equation: N2(v5) + O2 <=> N2(v4) + O2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + O2(v1) <=> N2(v4) + O2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + O2(v2) <=> N2(v4) + O2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + O2(v3) <=> N2(v4) + O2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v6) w = 5
+- equation: N2(v6) + O2 <=> N2(v5) + O2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + O2(v1) <=> N2(v5) + O2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + O2(v2) <=> N2(v5) + O2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + O2(v3) <=> N2(v5) + O2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v7) w = 6
+- equation: N2(v7) + O2 <=> N2(v6) + O2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + O2(v1) <=> N2(v6) + O2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + O2(v2) <=> N2(v6) + O2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + O2(v3) <=> N2(v6) + O2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# N2(v8) w = 7
+- equation: N2(v8) + O2 <=> N2(v7) + O2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + O2(v1) <=> N2(v7) + O2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + O2(v2) <=> N2(v7) + O2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + O2(v3) <=> N2(v7) + O2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# Oxygen Oxygen vibrational exchange
+# O2(v1) w = 0
+- equation: O2(v1) + O2(v1) <=> O2 + O2(v2)
+  rate-constant: {A: 5.00e-17, b: 1.5, Ea: 0.0}
+- equation: O2(v1) + O2(v2) <=> O2 + O2(v3)
+  rate-constant: {A: 8.28e-17, b: 1.5, Ea: 0.0}
+- equation: O2(v1) + O2(v3) <=> O2 + O2(v4)
+  rate-constant: {A: 1.37e-16, b: 1.5, Ea: 0.0}
+# O2(v2) w = 1
+- equation: O2(v2) + O2(v2) <=> O2(v1) + O2(v3)
+  rate-constant: {A: 1.50e-16,b: 1.5, Ea: 0.0}
+- equation: O2(v2) + O2(v3) <=> O2(v1) + O2(v4)
+  rate-constant: {A: 2.21e-16, b: 1.5, Ea: 0.0}
+# O2(v3) w = 2
+- equation: O2(v3) + O2(v3) <=> O2(v2) + O2(v4)
+  rate-constant: {A: 3.00e-16, b: 1.5, Ea: 0.0}

@@ -902,3 +902,9 @@ reactions:
   rate-constant: {A: 3.80e-15, b: 0.0, Ea: 0.0}
 - equation: O2^+ + NO => NO^+ + O2 # R73 Kossyi (208)
   rate-constant: {A: 4.40e-10, b: 0.0, Ea: 0.0}
+
+# =====================================================
+#          vibrational-translational relaxation
+# =====================================================
+- equation: N2(v1) + O => N2 + O
+  rate-constant: {A: 2.83e-20, b: 2.1, Ea: 0.0}

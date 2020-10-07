@@ -25,13 +25,16 @@ species:
 - name: N2
   composition: {N: 2}
   thermo:
-    model: NASA7
-    temperature-ranges: [200.0, 1000.0, 6000.0]
+    model: NASA9
+    temperature-ranges: [200.0, 1000.0, 6000.0, 2.0e+04]
     data:
-    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
-      -1046.97628, 2.96747038]
-    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
-      -923.948688, 5.87188762]
+    - [2.210371497e+04, -381.846182, 6.08273836, -8.53091441e-03, 1.384646189e-05,
+      -9.62579362e-09, 2.519705809e-12, 710.846086, -10.76003744]
+    - [5.87712406e+05, -2239.249073, 6.06694922, -6.1396855e-04, 1.491806679e-07,
+      -1.923105485e-11, 1.061954386e-15, 1.283210415e+04, -15.86640027]
+    - [8.31013916e+08, -6.42073354e+05, 202.0264635, -0.03065092046, 2.486903333e-06,
+      -9.70595411e-11, 1.437538881e-15, 4.93870704e+06, -1672.09974]
+    note: Ref-Elm. Gurvich,1978 pt1 p280 pt2 p207. [tpis78]
   transport:
     model: gas
     geometry: linear
@@ -115,13 +118,16 @@ species:
 - name: O2
   composition: {O: 2}
   thermo:
-    model: NASA7
-    temperature-ranges: [200.0, 1000.0, 6000.0]
+    model: NASA9
+    temperature-ranges: [200.0, 1000.0, 6000.0, 2.0e+04]
     data:
-    - [3.78245636, -2.99673416e-03, 9.84730201e-06, -9.68129509e-09, 3.24372837e-12,
-      -1063.94356, 3.65767573]
-    - [3.66096065, 6.56365811e-04, -1.41149627e-07, 2.05797935e-11, -1.29913436e-15,
-      -1215.97718, 3.41536279]
+    - [-3.42556342e+04, 484.700097, 1.119010961, 4.29388924e-03, -6.83630052e-07,
+      -2.0233727e-09, 1.039040018e-12, -3391.45487, 18.4969947]
+    - [-1.037939022e+06, 2344.830282, 1.819732036, 1.267847582e-03, -2.188067988e-07,
+      2.053719572e-11, -8.19346705e-16, -1.689010929e+04, 17.38716506]
+    - [4.9752943e+08, -2.866106874e+05, 66.9035225, -6.16995902e-03, 3.016396027e-07,
+      -7.4214166e-12, 7.27817577e-17, 2.293554027e+06, -553.062161]
+    note: Ref-Elm. Gurvich,1989 pt1 p94 pt2 p9. [tpis89]
   transport:
     model: gas
     geometry: linear
@@ -710,8 +716,12 @@ reactions:
 # =========================================
 #      electron collision processes
 # =========================================
-- equation: N2 + E => N2(A3) + E  # R1
+- equation: N2 + E => N2(A3) + E  # R1-1
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(A3,v=5-9) + E  # R1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(A3,v=10+) + E  # R1
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
 - equation: N2 + E => N2(B3) + E  # R2
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
 - equation: N2 + E => N2(ap) + E  # R3
@@ -755,6 +765,35 @@ reactions:
 - equation: N2 + E => N2(v8) + E # Reaction 21
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
 
+# =============================================
+#       collision to vibrational states
+# =============================================
+- equation: N2(v1) + E => N2(A3) + E # R1
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(B3) + E # R2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(ap) + E  # R3
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(C3) + E  # R4
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2^+ + E + E  # R7
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+- equation: N2(v1) + E => N2(v2) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v3) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v4) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v5) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v6) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v7) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v8) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
 # =========================================
 #        Reactions for glow discharge
 # =========================================
@@ -772,11 +811,15 @@ reactions:
   rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
 - equation: O2^- + N2 => O2 + E + N2  # R15 Kossyi(56)
   rate-constant: {A: 1.097e-13, b: 0.5, Ea: 4990}
+- equation: O2^- + N2(v1) => O2 + E + N2  # R15 mirror for N2(v1)
+  rate-constant: {A: 1.097e-13, b: 0.5, Ea: 4990}
 - equation: O2^- + O2 => O2 + E + O2  # R16 Kossyi(57)
   rate-constant: {A: 1.559e-11, b: 0.5, Ea: 5590}
 - equation: O3 + O => O2 + O2  # R17 Kossyi(82)
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 2300}
 - equation: O + O2 + N2 => O3 + N2  # R18-1 Kossyi(94)
+  rate-constant: {A: 5.58e-29, b: -2.0, Ea: 0.0}
+- equation: O + O2 + N2(v1) => O3 + N2(v1)  # R18-1 mirror for N2(v1)
   rate-constant: {A: 5.58e-29, b: -2.0, Ea: 0.0}
 - equation: O + O2 + O2 => O3 + O2  # R18-2 Kossyi(95)
   rate-constant: {A: 8.615e-31, b: -1.25, Ea: 0.0}
@@ -788,9 +831,13 @@ reactions:
   rate-constant: {A: 1.29e-12, b: 0.0, Ea: 0.0}
 - equation: N2(B3) + N2 => N2(A3) + N2  # R22 Kossyi(110)
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
+- equation: N2(B3) + N2(v1) => N2(A3) + N2(v1)  # R22 mirror for N2(v1)
+  rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
 - equation: N2(B3) + O2 => N2 + O + O  # R23 Kossyi(113)
   rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
 - equation: N2(ap) + N2 => N2(B3) + N2  # R24 Kossyi(114)
+  rate-constant: {A: 2.0e-13, b: 0.0, Ea: 0.0}
+- equation: N2(ap) + N2(v1) => N2(B3) + N2(v1)  # R24 mirror for N2(v1)
   rate-constant: {A: 2.0e-13, b: 0.0, Ea: 0.0}
 - equation: N2(ap) + O2 => N2 + O + O  # R25 Kossyi(115)
   rate-constant: {A: 2.8e-11, b: 0.0, Ea: 0.0}
@@ -798,15 +845,25 @@ reactions:
   rate-constant: {A: 3.0e+07, b: 0.0, Ea: 0.0}
 - equation: N2(C3) + N2 => N2(ap) + N2  # R27 Kossyi(118)
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
+- equation: N2(C3) + N2(v1) => N2(ap) + N2(v1)  # R27 mirror for N2(v1)
+  rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
 - equation: N2(C3) + O2 => N2 + O + O(1S)  # R28 Kossyi(119)
   rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
 - equation: O(1D) + N2 => O + N2  # R29 Kossyi(144)
+  rate-constant: {A: 1.8e-11, b: 0.0, Ea: -107}
+- equation: O(1D) + N2(v1) => O + N2(v1)  # R29 mirror for N2(v1)
   rate-constant: {A: 1.8e-11, b: 0.0, Ea: -107}
 - equation: O(1D) + O2 => O + O2  # R30 Kossyi(145)
   rate-constant: {A: 2.56e-11, b: 0.0, Ea: -67}
 - equation: N2^+ + N2 + N2 => N4^+ + N2  # R31 Kossyi(165)
   rate-constant: {A: 5.0e-29, b: 0.0, Ea: 0.0}
+- equation: N2^+ + N2 + N2(v1) => N4^+ + N2(v1)  # R31 mirror for N2(v1)
+  rate-constant: {A: 5.0e-29, b: 0.0, Ea: 0.0}
 - equation: O2^+ + N2 + N2 => N2O2^+ + N2  # R32 Kossyi(168)
+  rate-constant: {A: 8.1e-26, b: -2.0, Ea: 0.0}
+- equation: O2^+ + N2 + N2(v1) => N2O2^+ + N2(v1)  # R32 mirro for N2(v1)
+  rate-constant: {A: 8.1e-26, b: -2.0, Ea: 0.0}
+- equation: O2^+ + N2(v1) + N2(v1) => N2O2^+ + N2(v1)  # R32 mirro for N2(v1)
   rate-constant: {A: 8.1e-26, b: -2.0, Ea: 0.0}
 - equation: O2^+ + O2 + O2 => O4^+ + O2  # R33 Kossyi(167)
   rate-constant: {A: 2.028e-22, b: -3.2, Ea: 0.0}
@@ -814,16 +871,20 @@ reactions:
   rate-constant: {A: 2.5e-10, b: 0.0, Ea: 0.0}
 - equation: O4^+ + N2 => N2O2^+ + O2  # R35 Kossyi(226)
   rate-constant: {A: 2.957e-18, b: 2.5, Ea: 2650}
+- equation: O4^+ + N2(v1) => N2O2^+ + O2  # R35 mirror for N2(v1)
+  rate-constant: {A: 2.957e-18, b: 2.5, Ea: 2650}
 - equation: O4^+ + O2 => O2^+ + O2 + O2  # R36 Kossyi(227)
   rate-constant: {A: 2.673e+04, b: -4.0, Ea: 5030}
 - equation: N2O2^+ + N2 => O2^+ + N2 + N2  # R37 Kossyi(231)
+  rate-constant: {A: 1.48e+07, b: -5.3, Ea: 2357}
+- equation: N2O2^+ + N2(v1) => O2^+ + N2 + N2(v1)  # R37 mirror for N2(v1)
   rate-constant: {A: 1.48e+07, b: -5.3, Ea: 2357}
 - equation: N2O2^+ + O2 => O4^+ + N2  # R38 Kossyi(232)
   rate-constant: {A: 1.0e-09, b: 0.0, Ea: 0.0}
 - equation: O2^- + O2 + M => O4^- + M  # R39 Kossyi(234)
   type: three-body
   rate-constant: {A: 1.05e-28, b: -1.0, Ea: 0.0}
-  efficiencies: {N2: 1.0, O2: 1.0}
+  efficiencies: {N2: 1.0, O2: 1.0, N2(v1): 1.0}
 - equation: O2^- + O => O2 + O^-  # R40 Kossyi(237)
   rate-constant: {A: 3.3e-10, b: 0.0, Ea: 0.0}
 - equation: O3^- + O => O2^- + O2  # R41 Kossyi(247)
@@ -831,11 +892,11 @@ reactions:
 - equation: O^- + O2 + M => O3^- + M  # R42 Kossyi(235)
   type: three-body
   rate-constant: {A: 3.3e-28, b: -1.0, Ea: 0.0}
-  efficiencies: {N2: 1.0, O2: 1.0}
+  efficiencies: {N2: 1.0, O2: 1.0, N2(v1): 1.0}
 - equation: O4^- + M => O2^- + O2 + M  # R43 Kossyi(262)
   type: three-body
   rate-constant: {A: 1.0e-10, b: 0.0, Ea: 1044}
-  efficiencies: {N2: 1.0, O2: 1.0}
+  efficiencies: {N2: 1.0, O2: 1.0, N2(v1): 1.0}
 
 # ========================================================
 #  Kossyi 2.7 Recombination of positive and negative ions
@@ -853,7 +914,7 @@ reactions:
 - equation: O2^- + O2^+ + M => O2 + O2 + M  # R49 (type 5)
   type: three-body
   rate-constant: {A: 3.118e-19, b: -2.5, Ea: 0.0}
-  efficiencies: {N2: 1.0, O2: 1.0, N: 1.0, O: 1.0}
+  efficiencies: {N2: 1.0, O2: 1.0, N: 1.0, O: 1.0, N2(v1): 1.0}
 
 # ==============================================
 #    Additional reactions for spark discharge
@@ -900,5 +961,67 @@ reactions:
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 301}
 - equation: N4^+ + N2 => N2^+ + 2 N2 # R72 Kossyi(221) special formula
   rate-constant: {A: 3.80e-15, b: 0.0, Ea: 0.0}
+- equation: N4^+ + N2(v1) => N2^+ + N2 + N2(v1) # R72 mirror for N2(v1)
+  rate-constant: {A: 3.80e-15, b: 0.0, Ea: 0.0}
 - equation: O2^+ + NO => NO^+ + O2 # R73 Kossyi (208)
   rate-constant: {A: 4.40e-10, b: 0.0, Ea: 0.0}
+
+# ==================================================
+#          vibrational states quenching
+# ==================================================
+- equation: N2(v1) + O => N2 + O
+  duplicate: true
+  rate-constant: {A: 2.31e-16, b: 0.0, Ea: 1280}
+- equation: N2(v1) + O => N2 + O
+  duplicate: true
+  rate-constant: {A: 2.71e-14, b: 0.0, Ea: 10839}
+- equation: N2(v2) + O => N2(v1) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + O => N2(v2) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + O => N2(v3) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + O => N2(v4) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + O => N2(v5) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + O => N2(v6) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + O => N2(v7) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+- equation: O^- + N2(v1) => O + N2 + E
+  rate-constant: {A: 1.27e-13, b: 0.0, Ea: 13603}
+
+- equation: N2(v1) + O2 => N2 + O2
+  rate-constant: {A: 3.32e-15, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2 => N2 + N2
+  rate-constant: {A: 2.82e-15, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + O2 => N2(v1) + O2
+  rate-constant: {A: 7.97e-15, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2 => N2(v1) + N2
+  rate-constant: {A: 6.97e-15, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + O2 => N2(v2) + O2
+  rate-constant: {A: 1.46e-14, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2 => N2(v2) + N2
+  rate-constant: {A: 1.26e-14, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + O2 => N2(v3) + O2
+  rate-constant: {A: 2.32e-14, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2 => N2(v3) + N2
+  rate-constant: {A: 1.99e-14, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + O2 => N2(v4) + O2
+  rate-constant: {A: 3.65e-14, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2 => N2(v4) + N2
+  rate-constant: {A: 3.16e-14, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + O2 => N2(v5) + O2
+  rate-constant: {A: 5.31e-14, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2 => N2(v5) + N2
+  rate-constant: {A: 4.48e-14, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + O2 => N2(v6) + O2
+  rate-constant: {A: 7.64e-14, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N2 => N2(v6) + N2
+  rate-constant: {A: 6.48e-14, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + O2 => N2(v7) + O2
+  rate-constant: {A: 1.08e-13, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N2 => N2(v7) + N2
+  rate-constant: {A: 8.97e-14, b: 0.0, Ea: 0.0}
