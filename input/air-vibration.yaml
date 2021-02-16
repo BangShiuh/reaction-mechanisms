@@ -9,7 +9,7 @@ phases:
   elements: [O, N, E]
   species:
   - species: [O, N, E, O2, O2(v1), O2(v2), O2(v3), O2(v4),
-             N2, N2(v1), N2(v2), N2(v3), N2(v4), N2(v5), N2(v6), N2(v7), N2(v8)]
+             N2, N2(v1), N2(v2), N2(v3), N2(v4), N2(v5), N2(v6), N2(v7), N2(v8), N2(v9), N2(v10)]
   kinetics: gas
   reactions:
   - reactions: all
@@ -177,9 +177,9 @@ species:
     temperature-ranges: [200.0, 1000.0, 6000.0]
     data:
     - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
-      2306.72971, 2.96747038]
+      2305.28358, 2.96747038]
     - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
-      2442.56261, 5.87188762]
+      2428.31117, 5.87188762]
   transport:
     model: gas
     geometry: linear
@@ -195,9 +195,9 @@ species:
     temperature-ranges: [200.0, 1000.0, 6000.0]
     data:
     - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
-      5740.04271, 2.96747038]
+      5616.32510, 2.96747038]
     - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
-      5923.9753, 5.87188762]
+      5739.35269, 5.87188762]
   transport:
     model: gas
     geometry: linear
@@ -213,9 +213,9 @@ species:
     temperature-ranges: [200.0, 1000.0, 6000.0]
     data:
     - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
-      9133.5522, 2.96747038]
+      8886.14828, 2.96747038]
     - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
-      9289.33839, 5.87188762]
+      9009.17587, 5.87188762]
   transport:
     model: gas
     geometry: linear
@@ -231,9 +231,9 @@ species:
     temperature-ranges: [200.0, 1000.0, 6000.0]
     data:
     - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
-      1.25270617e+04, 2.96747038]
+      1.211475312e+04, 2.96747038]
     - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
-      1.26547013e+04, 5.87188762]
+      1.223778071e+04, 5.87188762]
   transport:
     model: gas
     geometry: linear
@@ -249,9 +249,9 @@ species:
     temperature-ranges: [200.0, 1000.0, 6000.0]
     data:
     - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
-      1.59202231e+04, 2.96747038]
+      1.530213962e+04, 2.96747038]
     - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
-      1.61361116e+04, 5.87188762]
+      1.542516721e+04, 5.87188762]
   transport:
     model: gas
     geometry: linear
@@ -267,9 +267,9 @@ species:
     temperature-ranges: [200.0, 1000.0, 6000.0]
     data:
     - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
-      1.93133844e+04, 2.96747038]
+      1.844830778e+04, 2.96747038]
     - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
-      1.9501474e+04, 5.87188762]
+      1.857133537e+04, 5.87188762]
   transport:
     model: gas
     geometry: linear
@@ -285,9 +285,9 @@ species:
     temperature-ranges: [200.0, 1000.0, 6000.0]
     data:
     - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
-      2.27065458e+04, 2.96747038]
+      2.155325760e+04, 2.96747038]
     - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
-      2.2982884e+04, 5.87188762]
+      2.167628519e+04, 5.87188762]
   transport:
     model: gas
     geometry: linear
@@ -303,9 +303,9 @@ species:
     temperature-ranges: [200.0, 1000.0, 6000.0]
     data:
     - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
-      2.60997071e+04, 2.96747038]
+      2.461698908e+04, 2.96747038]
     - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
-      2.6348247e+04, 5.87188762]
+      2.474001667e+04, 5.87188762]
   transport:
     model: gas
     geometry: linear
@@ -314,324 +314,637 @@ species:
     polarizability: 1.76
     rotational-relaxation: 4.0
   note: Thermo data from DeFilippo & Chen 2016
+- name: N2(v9)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      2.763950222e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      2.776252981e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: home-made similar to DeFilippo
+- name: N2(v10)
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53100528, -1.23660988e-04, -5.02999433e-07, 2.43530612e-09, -1.40881235e-12,
+      3.062079702e+04, 2.96747038]
+    - [2.95257637, 1.3969004e-03, -4.92631603e-07, 7.86010195e-11, -4.60755204e-15,
+      3.074382461e+04, 5.87188762]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.62
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+  note: home-made similar to DeFilippo
 
 reactions:
-
-# ========================================
-#          Vibrational excitation
-# ========================================
-# # ground state
-# - equation: N2 + E => N2(v1) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2 + E => N2(v2) + E # Reaction 2
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2 + E => N2(v3) + E # Reaction 3
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2 + E => N2(v4) + E # Reaction 4
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2 + E => N2(v5) + E # Reaction 5
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2 + E => N2(v6) + E # Reaction 6
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2 + E => N2(v7) + E # Reaction 7
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2 + E => N2(v8) + E # Reaction 8
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# # N2(v1)
-# - equation: N2(v1) + E => N2(v2) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2(v1) + E => N2(v3) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2(v1) + E => N2(v4) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2(v1) + E => N2(v5) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2(v1) + E => N2(v6) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2(v1) + E => N2(v7) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2(v1) + E => N2(v8) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# # N2(v2)
-# - equation: N2(v2) + E => N2(v3) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2(v2) + E => N2(v4) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2(v2) + E => N2(v5) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2(v2) + E => N2(v6) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2(v2) + E => N2(v7) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# - equation: N2(v2) + E => N2(v8) + E # Reaction 1
-#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-
-# ========================================
-#         Vibrational relaxation
-# ========================================
-- equation: N2(v1) + M => N2 + M
-  type: three-body
+# ==============================================
+#         Vibrational excitataion (oxygen)
+# ==============================================
+- equation: O2 + E => O2(v1) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O: 1.0, N: 1.0}
-  duplicate: true
-- equation: N2(v2) + M => N2(v1) + M
-  type: three-body
+- equation: O2 + E => O2(v2) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O: 1.0, N: 1.0}
-  duplicate: true
-- equation: N2(v3) + M => N2(v2) + M
-  type: three-body
+- equation: O2 + E => O2(v3) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O: 1.0, N: 1.0}
-  duplicate: true
-- equation: N2(v4) + M => N2(v3) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O: 1.0, N: 1.0}
-  duplicate: true
-- equation: N2(v5) + M => N2(v4) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O: 1.0, N: 1.0}
-  duplicate: true
-- equation: N2(v6) + M => N2(v5) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O: 1.0, N: 1.0}
-  duplicate: true
-- equation: N2(v7) + M => N2(v6) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O: 1.0, N: 1.0}
-  duplicate: true
-- equation: N2(v8) + M => N2(v7) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O: 1.0, N: 1.0}
-  duplicate: true
-
-- equation: N2(v1) + M => N2 + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O2: 1.0, N2: 1.0}
-  duplicate: true
-- equation: N2(v2) + M => N2(v1) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O2: 1.0, N2: 1.0}
-  duplicate: true
-- equation: N2(v3) + M => N2(v2) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O2: 1.0, N2: 1.0}
-  duplicate: true
-- equation: N2(v4) + M => N2(v3) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O2: 1.0, N2: 1.0}
-  duplicate: true
-- equation: N2(v5) + M => N2(v4) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O2: 1.0, N2: 1.0}
-  duplicate: true
-- equation: N2(v6) + M => N2(v5) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O2: 1.0, N2: 1.0}
-  duplicate: true
-- equation: N2(v7) + M => N2(v6) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O2: 1.0, N2: 1.0}
-  duplicate: true
-- equation: N2(v8) + M => N2(v7) + M
-  type: three-body
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-  efficiencies: {O2: 1.0, N2: 1.0}
-  duplicate: true
-
-  # oxygen
-- equation: O2(v1) + N2 => O2 + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: O2(v2) + N2 => O2(v1) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: O2(v3) + N2 => O2(v2) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: O2(v4) + N2 => O2(v3) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: O2(v1) + O2 => O2 + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: O2(v2) + O2 => O2(v1) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: O2(v3) + O2 => O2(v2) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: O2(v4) + O2 => O2(v3) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: O2(v1) + O => O2 + O
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: O2(v2) + O => O2(v1) + O
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: O2(v3) + O => O2(v2) + O
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: O2(v4) + O => O2(v3) + O
+- equation: O2 + E => O2(v4) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
 
-# ========================================
-#          Vibrational exchange
-# ========================================
-# nitrogen nitrogen vibrational exchange
-# N2(v1) w = 0
-- equation: N2(v1) + N2(v1) <=> N2 + N2(v2)
+# ==============================================
+#         Vibrational excitataion (nitrogen)
+# ==============================================
+# +v1
+- equation: N2 + E => N2(v1) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v1) + N2(v2) <=> N2 + N2(v3)
+- equation: N2(v1) + E => N2(v2) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v1) + N2(v3) <=> N2 + N2(v4)
+- equation: N2(v2) + E => N2(v3) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v1) + N2(v4) <=> N2 + N2(v5)
+- equation: N2(v3) + E => N2(v4) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v1) + N2(v5) <=> N2 + N2(v6)
+- equation: N2(v4) + E => N2(v5) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v1) + N2(v6) <=> N2 + N2(v7)
+- equation: N2(v5) + E => N2(v6) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v1) + N2(v7) <=> N2 + N2(v8)
+- equation: N2(v6) + E => N2(v7) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v2) w = 1
-- equation: N2(v2) + N2(v2) <=> N2(v1) + N2(v3)
+- equation: N2(v7) + E => N2(v8) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v2) + N2(v3) <=> N2(v1) + N2(v4)
+- equation: N2(v8) + E => N2(v9) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v2) + N2(v4) <=> N2(v1) + N2(v5)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v2) + N2(v5) <=> N2(v1) + N2(v6)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v2) + N2(v6) <=> N2(v1) + N2(v7)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v2) + N2(v7) <=> N2(v1) + N2(v8)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v3) w = 2
-- equation: N2(v3) + N2(v3) <=> N2(v2) + N2(v4)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v3) + N2(v4) <=> N2(v2) + N2(v5)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v3) + N2(v5) <=> N2(v2) + N2(v6)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v3) + N2(v6) <=> N2(v2) + N2(v7)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v3) + N2(v7) <=> N2(v2) + N2(v8)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v4) w = 3
-- equation: N2(v4) + N2(v4) <=> N2(v3) + N2(v5)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v4) + N2(v5) <=> N2(v3) + N2(v6)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v4) + N2(v6) <=> N2(v3) + N2(v7)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v4) + N2(v7) <=> N2(v3) + N2(v8)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v5) w = 4
-- equation: N2(v5) + N2(v5) <=> N2(v4) + N2(v6)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v5) + N2(v6) <=> N2(v4) + N2(v7)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v5) + N2(v7) <=> N2(v4) + N2(v8)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v6) w = 5
-- equation: N2(v6) + N2(v6) <=> N2(v5) + N2(v7)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v6) + N2(v7) <=> N2(v5) + N2(v8)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v7) w = 6
-- equation: N2(v7) + N2(v7) <=> N2(v6) + N2(v8)
+- equation: N2(v9) + E => N2(v10) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
 
-# Nitrogen Oxygen vibrational exchange
-# N2(v1) w = 0
-- equation: N2(v1) + O2 <=> N2 + O2(v1)
+# +v2
+- equation: N2 + E => N2(v2) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v1) + O2(v1) <=> N2 + O2(v2)
+- equation: N2(v1) + E => N2(v3) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v1) + O2(v2) <=> N2 + O2(v3)
+- equation: N2(v2) + E => N2(v4) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v1) + O2(v3) <=> N2 + O2(v4)
+- equation: N2(v3) + E => N2(v5) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v2) w = 1
-- equation: N2(v2) + O2 <=> N2(v1) + O2(v1)
+- equation: N2(v4) + E => N2(v6) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v2) + O2(v1) <=> N2(v1) + O2(v2)
+- equation: N2(v5) + E => N2(v7) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v2) + O2(v2) <=> N2(v1) + O2(v3)
+- equation: N2(v6) + E => N2(v8) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v2) + O2(v3) <=> N2(v1) + O2(v4)
+- equation: N2(v7) + E => N2(v9) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v3) w = 2
-- equation: N2(v3) + O2 <=> N2(v2) + O2(v1)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v3) + O2(v1) <=> N2(v2) + O2(v2)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v3) + O2(v2) <=> N2(v2) + O2(v3)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v3) + O2(v3) <=> N2(v2) + O2(v4)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v4) w = 3
-- equation: N2(v4) + O2 <=> N2(v3) + O2(v1)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v4) + O2(v1) <=> N2(v3) + O2(v2)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v4) + O2(v2) <=> N2(v3) + O2(v3)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v4) + O2(v3) <=> N2(v3) + O2(v4)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v5) w = 4
-- equation: N2(v5) + O2 <=> N2(v4) + O2(v1)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v5) + O2(v1) <=> N2(v4) + O2(v2)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v5) + O2(v2) <=> N2(v4) + O2(v3)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v5) + O2(v3) <=> N2(v4) + O2(v4)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v6) w = 5
-- equation: N2(v6) + O2 <=> N2(v5) + O2(v1)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v6) + O2(v1) <=> N2(v5) + O2(v2)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v6) + O2(v2) <=> N2(v5) + O2(v3)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v6) + O2(v3) <=> N2(v5) + O2(v4)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v7) w = 6
-- equation: N2(v7) + O2 <=> N2(v6) + O2(v1)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v7) + O2(v1) <=> N2(v6) + O2(v2)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v7) + O2(v2) <=> N2(v6) + O2(v3)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v7) + O2(v3) <=> N2(v6) + O2(v4)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-# N2(v8) w = 7
-- equation: N2(v8) + O2 <=> N2(v7) + O2(v1)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v8) + O2(v1) <=> N2(v7) + O2(v2)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v8) + O2(v2) <=> N2(v7) + O2(v3)
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v8) + O2(v3) <=> N2(v7) + O2(v4)
+- equation: N2(v8) + E => N2(v10) + E
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
 
-# Oxygen Oxygen vibrational exchange
-# O2(v1) w = 0
-- equation: O2(v1) + O2(v1) <=> O2 + O2(v2)
-  rate-constant: {A: 5.00e-17, b: 1.5, Ea: 0.0}
-- equation: O2(v1) + O2(v2) <=> O2 + O2(v3)
-  rate-constant: {A: 8.28e-17, b: 1.5, Ea: 0.0}
-- equation: O2(v1) + O2(v3) <=> O2 + O2(v4)
-  rate-constant: {A: 1.37e-16, b: 1.5, Ea: 0.0}
-# O2(v2) w = 1
-- equation: O2(v2) + O2(v2) <=> O2(v1) + O2(v3)
-  rate-constant: {A: 1.50e-16,b: 1.5, Ea: 0.0}
-- equation: O2(v2) + O2(v3) <=> O2(v1) + O2(v4)
-  rate-constant: {A: 2.21e-16, b: 1.5, Ea: 0.0}
-# O2(v3) w = 2
-- equation: O2(v3) + O2(v3) <=> O2(v2) + O2(v4)
-  rate-constant: {A: 3.00e-16, b: 1.5, Ea: 0.0}
+# +v3
+- equation: N2 + E => N2(v3) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v4) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + E => N2(v5) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + E => N2(v6) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + E => N2(v7) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + E => N2(v8) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + E => N2(v9) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + E => N2(v10) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# +v4
+- equation: N2 + E => N2(v4) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v5) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + E => N2(v6) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + E => N2(v7) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + E => N2(v8) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + E => N2(v9) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + E => N2(v10) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# +v5
+- equation: N2 + E => N2(v5) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v6) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + E => N2(v7) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + E => N2(v8) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + E => N2(v9) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + E => N2(v10) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# +v6
+- equation: N2 + E => N2(v6) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v7) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + E => N2(v8) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + E => N2(v9) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + E => N2(v10) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# +v7
+- equation: N2 + E => N2(v7) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v8) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + E => N2(v9) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + E => N2(v10) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# +v8
+- equation: N2 + E => N2(v8) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v9) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + E => N2(v10) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# +v9
+- equation: N2 + E => N2(v9) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + E => N2(v10) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# +v10
+- equation: N2 + E => N2(v10) + E
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+
+# - equation: N2 + E => N2(v1) + E
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v2) + E
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v3) + E
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v4) + E
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v5) + E
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v6) + E
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v7) + E
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v8) + E
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v9) + E
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2 + E => N2(v10) + E
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# ==============================================
+#         Vibrational relaxation (nitrogen)
+# ==============================================
+- equation: N2(v1) + O <=> N2 + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + O <=> N2(v1) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + O <=> N2(v2) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + O <=> N2(v3) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + O <=> N2(v4) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + O <=> N2(v5) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + O <=> N2(v6) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + O <=> N2(v7) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + O <=> N2(v8) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + O <=> N2(v9) + O
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+- equation: N2(v1) + N <=> N2 + N
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N <=> N2(v1) + N
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N <=> N2(v2) + N
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N <=> N2(v3) + N
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N <=> N2(v4) + N
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N <=> N2(v5) + N
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N <=> N2(v6) + N
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N <=> N2(v7) + N
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + N <=> N2(v8) + N
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + N <=> N2(v9) + N
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+- equation: N2(v1) + N2 <=> N2 + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2 <=> N2(v1) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2 <=> N2(v2) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2 <=> N2(v3) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2 <=> N2(v4) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2 <=> N2(v5) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N2 <=> N2(v6) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N2 <=> N2(v7) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + N2 <=> N2(v8) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + N2 <=> N2(v9) + N2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+- equation: N2(v1) + O2 <=> N2 + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + O2 <=> N2(v1) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + O2 <=> N2(v2) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + O2 <=> N2(v3) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + O2 <=> N2(v4) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + O2 <=> N2(v5) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + O2 <=> N2(v6) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + O2 <=> N2(v7) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + O2 <=> N2(v8) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + O2 <=> N2(v9) + O2
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# ===============================================
+#   Vibrational exchange (nitrogen) up-pumping
+# ===============================================
+
+# N2(v1) v = 1 w = 1-10
+- equation: N2(v1) + N2 => N2 + N2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v1) => N2 + N2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v2) => N2 + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v3) => N2 + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v4) => N2 + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v5) => N2 + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v6) => N2 + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v7) => N2 + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v8) => N2 + N2(v9)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v1) + N2(v9) => N2 + N2(v10)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# N2(v2) v = 2 w = 1-10
+- equation: N2(v2) + N2 => N2(v1) + N2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v1) => N2(v1) + N2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v2) => N2(v1) + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v3) => N2(v1) + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v4) => N2(v1) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v5) => N2(v1) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v6) => N2(v1) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v7) => N2(v1) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v8) => N2(v1) + N2(v9)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v2) + N2(v9) => N2(v1) + N2(v10)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# N2(v3) w = 2 w = 1-10
+- equation: N2(v3) + N2 => N2(v2) + N2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v1) => N2(v2) + N2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v2) => N2(v2) + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v3) => N2(v2) + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v4) => N2(v2) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v5) => N2(v2) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v6) => N2(v2) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v7) => N2(v2) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v8) => N2(v2) + N2(v9)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v3) + N2(v9) => N2(v2) + N2(v10)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# N2(v4) w = 3 w = 1-10
+- equation: N2(v4) + N2 => N2(v3) + N2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v1) => N2(v3) + N2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v2) => N2(v3) + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v3) => N2(v3) + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v4) => N2(v3) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v5) => N2(v3) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v6) => N2(v3) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v7) => N2(v3) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v8) => N2(v3) + N2(v9)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v4) + N2(v9) => N2(v3) + N2(v10)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# N2(v5) w = 4 w = 1-10
+- equation: N2(v5) + N2 => N2(v4) + N2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2(v1) => N2(v4) + N2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2(v2) => N2(v4) + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2(v3) => N2(v4) + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2(v4) => N2(v4) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2(v5) => N2(v4) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2(v6) => N2(v4) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2(v7) => N2(v4) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2(v8) => N2(v4) + N2(v9)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v5) + N2(v9) => N2(v4) + N2(v10)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# N2(v6) w = 1-10
+- equation: N2(v6) + N2 => N2(v5) + N2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2(v1) => N2(v5) + N2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2(v2) => N2(v5) + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2(v3) => N2(v5) + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2(v4) => N2(v5) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2(v5) => N2(v5) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2(v6) => N2(v5) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2(v7) => N2(v5) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2(v8) => N2(v5) + N2(v9)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v6) + N2(v9) => N2(v5) + N2(v10)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# N2(v7) w = 1-10
+- equation: N2(v7) + N2 => N2(v6) + N2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N2(v1) => N2(v6) + N2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N2(v2) => N2(v6) + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N2(v3) => N2(v6) + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N2(v4) => N2(v6) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N2(v5) => N2(v6) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N2(v6) => N2(v6) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N2(v7) => N2(v6) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N2(v8) => N2(v6) + N2(v9)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v7) + N2(v9) => N2(v6) + N2(v10)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# N2(v8) w = 1-10
+- equation: N2(v8) + N2 => N2(v7) + N2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N2(v1) => N2(v7) + N2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N2(v2) => N2(v7) + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N2(v3) => N2(v7) + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N2(v4) => N2(v7) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N2(v5) => N2(v7) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N2(v6) => N2(v7) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N2(v7) => N2(v7) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N2(v8) => N2(v7) + N2(v9)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v8) + N2(v9) => N2(v7) + N2(v10)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# N2(v9) w = 8
+- equation: N2(v9) + N2 => N2(v8) + N2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + N2(v1) => N2(v8) + N2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + N2(v2) => N2(v8) + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + N2(v3) => N2(v8) + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + N2(v4) => N2(v8) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + N2(v5) => N2(v8) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + N2(v6) => N2(v8) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + N2(v7) => N2(v8) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + N2(v8) => N2(v8) + N2(v9)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v9) + N2(v9) => N2(v8) + N2(v10)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# N2(v10) w = 9
+- equation: N2(v10) + N2 => N2(v9) + N2(v1)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + N2(v1) => N2(v9) + N2(v2)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + N2(v2) => N2(v9) + N2(v3)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + N2(v3) => N2(v9) + N2(v4)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + N2(v4) => N2(v9) + N2(v5)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + N2(v5) => N2(v9) + N2(v6)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + N2(v6) => N2(v9) + N2(v7)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + N2(v7) => N2(v9) + N2(v8)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + N2(v8) => N2(v9) + N2(v9)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+- equation: N2(v10) + N2(v9) => N2(v9) + N2(v10)
+  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# # ==============================================
+# #         Vibrational relaxation (oxygen)
+# # ==============================================
+# - equation: O2(v1) + N2 <=> O2 + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: O2(v2) + N2 <=> O2(v1) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: O2(v3) + N2 <=> O2(v2) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: O2(v4) + N2 <=> O2(v3) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: O2(v1) + O2 <=> O2 + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: O2(v2) + O2 <=> O2(v1) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: O2(v3) + O2 <=> O2(v2) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: O2(v4) + O2 <=> O2(v3) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: O2(v1) + O <=> O2 + O
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: O2(v2) + O <=> O2(v1) + O
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: O2(v3) + O <=> O2(v2) + O
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: O2(v4) + O <=> O2(v3) + O
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# # Nitrogen Oxygen vibrational exchange
+# # N2(v1) w = 0
+# - equation: N2(v1) + O2 <=> N2 + O2(v1)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v1) + O2(v1) <=> N2 + O2(v2)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v1) + O2(v2) <=> N2 + O2(v3)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v1) + O2(v3) <=> N2 + O2(v4)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# # N2(v2) w = 1
+# - equation: N2(v2) + O2 <=> N2(v1) + O2(v1)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v2) + O2(v1) <=> N2(v1) + O2(v2)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v2) + O2(v2) <=> N2(v1) + O2(v3)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v2) + O2(v3) <=> N2(v1) + O2(v4)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# # N2(v3) w = 2
+# - equation: N2(v3) + O2 <=> N2(v2) + O2(v1)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v3) + O2(v1) <=> N2(v2) + O2(v2)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v3) + O2(v2) <=> N2(v2) + O2(v3)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v3) + O2(v3) <=> N2(v2) + O2(v4)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# # N2(v4) w = 3
+# - equation: N2(v4) + O2 <=> N2(v3) + O2(v1)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v4) + O2(v1) <=> N2(v3) + O2(v2)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v4) + O2(v2) <=> N2(v3) + O2(v3)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v4) + O2(v3) <=> N2(v3) + O2(v4)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# # N2(v5) w = 4
+# - equation: N2(v5) + O2 <=> N2(v4) + O2(v1)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v5) + O2(v1) <=> N2(v4) + O2(v2)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v5) + O2(v2) <=> N2(v4) + O2(v3)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v5) + O2(v3) <=> N2(v4) + O2(v4)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# # N2(v6) w = 5
+# - equation: N2(v6) + O2 <=> N2(v5) + O2(v1)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v6) + O2(v1) <=> N2(v5) + O2(v2)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v6) + O2(v2) <=> N2(v5) + O2(v3)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v6) + O2(v3) <=> N2(v5) + O2(v4)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# # N2(v7) w = 6
+# - equation: N2(v7) + O2 <=> N2(v6) + O2(v1)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v7) + O2(v1) <=> N2(v6) + O2(v2)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v7) + O2(v2) <=> N2(v6) + O2(v3)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v7) + O2(v3) <=> N2(v6) + O2(v4)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# # N2(v8) w = 7
+# - equation: N2(v8) + O2 <=> N2(v7) + O2(v1)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v8) + O2(v1) <=> N2(v7) + O2(v2)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v8) + O2(v2) <=> N2(v7) + O2(v3)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v8) + O2(v3) <=> N2(v7) + O2(v4)
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+
+# # Oxygen Oxygen vibrational exchange
+# # O2(v1) w = 0
+# - equation: O2(v1) + O2(v1) <=> O2 + O2(v2)
+#   rate-constant: {A: 5.00e-17, b: 1.5, Ea: 0.0}
+# - equation: O2(v1) + O2(v2) <=> O2 + O2(v3)
+#   rate-constant: {A: 8.28e-17, b: 1.5, Ea: 0.0}
+# - equation: O2(v1) + O2(v3) <=> O2 + O2(v4)
+#   rate-constant: {A: 1.37e-16, b: 1.5, Ea: 0.0}
+# # O2(v2) w = 1
+# - equation: O2(v2) + O2(v2) <=> O2(v1) + O2(v3)
+#   rate-constant: {A: 1.50e-16,b: 1.5, Ea: 0.0}
+# - equation: O2(v2) + O2(v3) <=> O2(v1) + O2(v4)
+#   rate-constant: {A: 2.21e-16, b: 1.5, Ea: 0.0}
+# # O2(v3) w = 2
+# - equation: O2(v3) + O2(v3) <=> O2(v2) + O2(v4)
+#   rate-constant: {A: 3.00e-16, b: 1.5, Ea: 0.0}

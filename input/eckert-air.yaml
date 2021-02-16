@@ -588,151 +588,142 @@ reactions:
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
 
 # ========================================
-#   Adamovich plasma assisted combustion
+#   Table 2.4 of Eckert 2018 Energy
 # ========================================
-- equation: N2(A3) + O2 => N2 + O + O  # A13
+- equation: N2(A3) + O2 => N2 + O + O  # R 2.158
   rate-constant: {A: 2.5e-12, b: 0.0, Ea: 0.0}
-- equation: N2(A3) + O2 => N2 + O2(a1)  # A14
-  # rate-constant: {A: 1.29e-12, b: 0.0, Ea: 0.0} # Kossyi
-  rate-constant: {A: 8.68e-15, b: 0.55, Ea: 0.0} # Adamovich
-- equation: N2(A3) + O2 => N2 + O2(b1)  # A15
-  # rate-constant: {A: 1.29e-12, b: 0.0, Ea: 0.0} # Kossyi
-  rate-constant: {A: 8.68e-15, b: 0.55, Ea: 0.0} # Adamovich
-- equation: N2(A3) + O2 => N2O + O  # A16
-  # rate-constant: {A: 7.8e-14, b: 0.0, Ea: 0.0} # Kossyi
-  rate-constant: {A: 8.68e-16, b: 0.55, Ea: 0.0} # Adamovich
-- equation: N2(A3) + O => N2 + O(1S)  # A17
-  rate-constant: {A: 2.1e-11, b: 0.0, Ea: 0.0}
-- equation: N2(A3) + O => NO + N(2D)  # A18
+- equation: N2(A3) + O2 => N2O + O  # R 2.159
+  rate-constant: {A: 8.68e-16, b: 0.55, Ea: 0.0}
+- equation: N2(A3) + O => NO + N(2D)  # R 2.160
   rate-constant: {A: 7.0e-12, b: 0.0, Ea: 0.0}
-- equation: N2(A3) + N2 => N2 + N2  # A19
-  rate-constant: {A: 3.0e-18, b: 0.0, Ea: 0.0}
-
-- equation: N2(A3) + N => N2 + N(2P)  # A20
-  rate-constant: {A: 1.79e-19, b: -0.67, Ea: 0.0}
-- equation: N2(A3) + NO => N2 + NO  # A21
-  rate-constant: {A: 7.0e-11, b: 0.0, Ea: 0.0}
-- equation: N2(A3) + N2O => N2 + N + NO  # A22
+- equation: N2(A3) + N2O => N2 + N + NO  # R 2.161
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
-- equation: N2(A3) + N2(A3) => N2(C3) + N2  # A23
+- equation: N2(A3) + N2(A3) => N2(C3) + N2  # R 2.162
   rate-constant: {A: 5.54e-04, b: -2.64, Ea: 0.0}
-- equation: N2(B3) + O2 => N2 + O + O  # A24
-  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
-- equation: N2(ap) + O2 => N2 + O + O  # A25 Different rate to Kossyi
-  # rate-constant: {A: 2.8e-11, b: 0.0, Ea: 0.0} # Kossyi
-  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0} # Adamovich (result no different)
-- equation: N2(C3) + O2 => N2 + O + O(1S)  # A26
-  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
-- equation: N2(B3) + O => NO + N(2D)  # A27 not include in Kossyi
-  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
-- equation: N2(ap) + O => NO + N(2D)  # A28 not include in Kossyi
-  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
-- equation: N2(C3) + O => NO + N(2D)  # A29 not include in Kossyi
-  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
-- equation: N2(B3) + N2 => N2(A3) + N2  # A30
+- equation: N2(A3) + N2 => N2 + N2  # R 2.163
+  rate-constant: {A: 3.0e-18, b: 0.0, Ea: 0.0}
+- equation: N2(A3) + O2 => N2 + O2(a1)  # R 2.164
+  rate-constant: {A: 8.68e-15, b: 0.55, Ea: 0.0}
+- equation: N2(A3) + O2 => N2 + O2(b1)  # R 2.165
+  rate-constant: {A: 8.68e-15, b: 0.55, Ea: 0.0}
+- equation: N2(A3) + N => N2 + N(2P)  # R 2.166
+  rate-constant: {A: 1.79e-19, b: -0.67, Ea: 0.0}
+- equation: N2(A3) + O => N2 + O(1S)  # R 2.167
+  rate-constant: {A: 2.1e-11, b: 0.0, Ea: 0.0}
+- equation: N2(A3) + NO => N2 + NO  # R 2.168
+  rate-constant: {A: 7.0e-11, b: 0.0, Ea: 0.0}
+- equation: N2(B3) + N2 => N2(A3) + N2  # R 2.169
   rate-constant: {A: 5.0e-11, b: 0.0, Ea: 0.0}
-
-- equation: N2(B3) => N2(A3)  # A31
+- equation: N2(B3) => N2(A3)  # R 2.170
   rate-constant: {A: 1.5e+05, b: 0.0, Ea: 0.0}
-- equation: N2(B3) + NO => N2(A3) + NO  # A32
+- equation: N2(B3) + NO => N2(A3) + NO  # R 2.171
   rate-constant: {A: 2.4e-10, b: 0.0, Ea: 0.0}
-- equation: N2(ap) + N2 => N2(B3) + N2  # A33
+- equation: N2(B3) + O2 => N2 + O + O  # R 2.172-177
+  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
+- equation: N2(ap) + O2 => N2 + O + O  # R 2.178
+  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
+- equation: N2(B3) + O => NO + N(2D)  # R 2.179
+  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
+- equation: N2(C3) + O => NO + N(2D)  # R 2.182
+  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
+- equation: N2(ap) + O => NO + N(2D)  # R 2.184
+  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
+- equation: N2(ap) + N2 => N2(B3) + N2  # R 2.188
   rate-constant: {A: 2.0e-13, b: 0.0, Ea: 0.0}
-- equation: N2(ap) + NO => N2 + N + O  # A34
+- equation: N2(ap) + NO => N2 + N + O  # R 2.189
   rate-constant: {A: 3.6e-10, b: 0.0, Ea: 0.0}
-- equation: N2(C3) => N2(B3)  # A35
+- equation: N2(C3) => N2(B3)  # R 2.190
   rate-constant: {A: 3.0e+07, b: 0.0, Ea: 0.0}
-- equation: N2(C3) + N2 => N2(ap) + N2  # A36
+- equation: N2(C3) + N2 => N2(ap) + N2  # R 2.191
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
-
-- equation: O2(a1) + O3 => O2 + O2 + O # A37
+- equation: N2(C3) + O2 => N2 + O + O(1S)  # R 2.192
+  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
+- equation: O2(a1) + O3 => O2 + O2 + O # R 2.194
   rate-constant: {A: 9.7e-13, b: 0.0, Ea: 1564}
-- equation: O2(a1) + O2 => O2 + O2 # A38
-  rate-constant: {A: 2.3e-20, b: 0.8, Ea: 0.0}
-- equation: O2(a1) + O => O2 + O # A39
-  rate-constant: {A: 7.0e-16, b: 0.0, Ea: 0.0}
-- equation: O2(a1) + N => NO + O  # A40
+- equation: O2(a1) + N => NO + O  # R 2.195
   rate-constant: {A: 2.0e-14, b: 0.0, Ea: 600}
-- equation: O2(a1) + N2 => O2 + N2  # A41
+- equation: O2(a1) + N2 => O2 + N2  # R 2.196
   rate-constant: {A: 3.0e-21, b: 0.0, Ea: 0.0}
-- equation: O2(a1) + NO => O2 + NO  # A42
+- equation: O2(a1) + O2 => O2 + O2 # R 2.197
+  rate-constant: {A: 2.3e-20, b: 0.8, Ea: 0.0}
+- equation: O2(a1) + O => O2 + O # R 2.198
+  rate-constant: {A: 7.0e-16, b: 0.0, Ea: 0.0}
+- equation: O2(a1) + NO => O2 + NO  # R 2.199
   rate-constant: {A: 2.5e-11, b: 0.0, Ea: 0.0}
-
-- equation: O2(b1) + O3 => O2 + O2 + O  # A43
+- equation: O2(b1) + O3 => O2 + O2 + O  # R 2.200
   rate-constant: {A: 1.8e-11, b: 0.0, Ea: 0.0}
-- equation: O2(b1) + O2 => O2(a1) + O2  # A44
-  rate-constant: {A: 4.3e-22, b: 2.4, Ea: 241}
-- equation: O2(b1) + O => O2(a1) + O  # A45
-  rate-constant: {A: 8.0e-14, b: 0.0, Ea: 0.0}
-- equation: O2(b1) + O => O2 + O(1D)  # A46
-  rate-constant: {A: 6.0e-11, b: -0.1, Ea: 4201}
-- equation: O2(b1) + N2 => O2(a1) + N2  # A47
+- equation: O2(b1) + N2 => O2(a1) + N2  # R 2.201
   rate-constant: {A: 4.9e-15, b: 0.0, Ea: 253}  
-- equation: O2(b1) + NO => O2(a1) + NO  # A48
+- equation: O2(b1) + O2 => O2(a1) + O2  # R 2.202
+  rate-constant: {A: 4.3e-22, b: 2.4, Ea: 241}
+- equation: O2(b1) + O => O2(a1) + O  # R 2.203
+  rate-constant: {A: 8.0e-14, b: 0.0, Ea: 0.0}
+- equation: O2(b1) + O => O2 + O(1D)  # R 2.204
+  rate-constant: {A: 6.0e-11, b: -0.1, Ea: 4201}
+- equation: O2(b1) + NO => O2(a1) + NO  # R 2.205
   rate-constant: {A: 4.0e-14, b: 0.0, Ea: 0.0}
-
-- equation: N(2D) + O2 => N + O + O  # A49
+- equation: N(2D) + O2 => NO + O  # R 2.206
   rate-constant: {A: 8.66e-14, b: 0.5, Ea: 0.0}
-- equation: N(2D) + O2 => N + O + O(1D)  # A50
+- equation: N(2D) + O2 => NO + O(1D)  # R 2.207
   rate-constant: {A: 3.46e-13, b: 0.5, Ea: 0.0}
-- equation: N(2D) + N2 => N + N2  # A51
-  rate-constant: {A: 2.0e-14, b: 0.0, Ea: 0.0}
-- equation: N(2D) + NO => N2O  # A52
+- equation: N(2D) + NO => N2O  # R 2.208
   rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
-- equation: N(2D) + N2O => NO + N2  # A53
+- equation: N(2D) + N2O => NO + N2  # R 2.209
   rate-constant: {A: 3.0e-12, b: 0.0, Ea: 0.0}
-- equation: N(2D) + O2 => NO + O  # A54
+- equation: N(2D) + N2 => N + N2  # R 2.210
+  rate-constant: {A: 2.0e-14, b: 0.0, Ea: 0.0}
+- equation: N(2P) + O2 => NO + O  # R 2.211
   rate-constant: {A: 2.6e-12, b: 0.0, Ea: 0.0}
-- equation: N(2D) + N2 => N(2D) + N2  # A55
+- equation: N(2P) + NO => N2(A3) + O  # R 2.212
+  rate-constant: {A: 3.4e-11, b: 0.0, Ea: 0.0}
+- equation: N(2P) + N2 => N(2D) + N2  # R 2.213
   rate-constant: {A: 2.0e-18, b: 0.0, Ea: 0.0}
-- equation: N(2P) + N => N(2D) + N  # A56
+- equation: N(2P) + N => N(2D) + N  # R 2.214
   rate-constant: {A: 1.8e-12, b: 0.0, Ea: 0.0}
-- equation: N(2P) + NO => N2(A3) + O  # A57
-  rate-constant: {A: 3.4e-11, b: 0.0, Ea: 0.0}
-
-- equation: O(1D) + O2 => O + O2(b1)  # A58
-  rate-constant: {A: 2.56e-11, b: 0.0, Ea: -67}
-- equation: O(1D) + O2 => O + O2  # A59
-  rate-constant: {A: 6.4e-12, b: 0.0, Ea: -67}
-- equation: O(1D) + O3 => O + O + O2  # A60
-  # rate-constant: {A: 1.2e-10, b: 0.0, Ea: 0.0} # Kossyi
-  rate-constant: {A: 2.3e-10, b: 0.0, Ea: 0.0} # Adamovich
-- equation: O(1D) + O3 => O2 + O2  # A61
-  rate-constant: {A: 1.2e-10, b: 0.0, Ea: 0.0}
-
-- equation: O(1D) + N2O => NO + NO  # A62
-  rate-constant: {A: 7.2e-11, b: 0.0, Ea: 0.0}
-- equation: O(1D) + N2O => N2 + O2  # A63
-  rate-constant: {A: 4.4e-11, b: 0.0, Ea: 0.0}
-- equation: O(1D) + N2 => O + N2  # A64
+- equation: O(1D) + N2 => O + N2  # R 2.215
   rate-constant: {A: 1.8e-11, b: 0.0, Ea: -107}
-- equation: O(1D) + NO => N + O2  # A65
+- equation: O(1D) + O2 => O + O2(b1)  # R 2.216
+  rate-constant: {A: 2.56e-11, b: 0.0, Ea: -67}
+- equation: O(1D) + O2 => O + O2  # R 2.217
+  rate-constant: {A: 6.4e-12, b: 0.0, Ea: -67}
+- equation: O(1D) + O3 => O + O + O2  # R 2.218
+  rate-constant: {A: 2.3e-10, b: 0.0, Ea: 0.0}
+- equation: O(1D) + O3 => O2 + O2  # R 2.219
+  rate-constant: {A: 1.2e-10, b: 0.0, Ea: 0.0}
+- equation: O(1D) + NO => N + O2  # R 2.220
   rate-constant: {A: 1.7e-10, b: 0.0, Ea: 0.0}
-- equation: O(1S) + O2 => O(1D) + O2  # A66
-  rate-constant: {A: 1.33e-12, b: 0.0, Ea: 850}
-- equation: O(1S) + O3 => O(1D) + O + O2  # A67
-  rate-constant: {A: 2.9e-10, b: 0.0, Ea: 0.0}
-- equation: O(1S) + O3 => O2 + O2  # A68
-  rate-constant: {A: 2.9e-10, b: 0.0, Ea: 0.0}
-- equation: O(1S) + O => O(1D) + O  # A69
-  rate-constant: {A: 5.0e-11, b: 0.0, Ea: 301}
-- equation: O(1S) + O2(a1) => O(1D) + O2(b1)  # A70
-  rate-constant: {A: 3.6e-11, b: 0.0, Ea: 0.0}
-- equation: O(1S) + O2(a1) => O + O + O  # A71
-  rate-constant: {A: 3.4e-11, b: 0.0, Ea: 0.0}
-- equation: O(1S) + O2(a1) => O + O2(a1)  # A72
-  rate-constant: {A: 1.3e-10, b: 0.0, Ea: 0.0}
-- equation: O(1S) + N2 => N + NO  # A73
+- equation: O(1D) + N2O => NO + NO  # R 2.221
+  rate-constant: {A: 7.2e-11, b: 0.0, Ea: 0.0}
+- equation: O(1D) + N2O => N2 + O2  # R 2.222
+  rate-constant: {A: 4.4e-11, b: 0.0, Ea: 0.0}
+- equation: O(1S) + N2 => N + NO  # R2.223
   rate-constant: {A: 5.0e-17, b: 0.0, Ea: 0.0}
-- equation: O(1S) + N2O => O + N2O  # A74
-  rate-constant: {A: 6.3e-12, b: 0.0, Ea: 0.0}
-- equation: O(1S) + N2O => O(1D) + N2O  # A75
-  rate-constant: {A: 3.1e-12, b: 0.0, Ea: 0.0}
-- equation: O(1S) + NO => O + NO  # A76
+- equation: O(1S) + O2 => O(1D) + O2  # R 2.224
+  rate-constant: {A: 1.33e-12, b: 0.0, Ea: 850}
+- equation: O(1S) + O3 => O(1D) + O + O2  # R2.225
   rate-constant: {A: 2.9e-10, b: 0.0, Ea: 0.0}
-- equation: O(1S) + NO => O(1D) + NO  # A77
+- equation: O(1S) + O3 => O2 + O2  # R 2.226
+  rate-constant: {A: 2.9e-10, b: 0.0, Ea: 0.0}
+- equation: O(1S) + NO => O + NO  # R 2.227
+  rate-constant: {A: 2.9e-10, b: 0.0, Ea: 0.0}
+- equation: O(1S) + NO => O(1D) + NO  # R 2.228
   rate-constant: {A: 5.1e-10, b: 0.0, Ea: 0.0}
+- equation: O(1S) + N2O => O + N2O  # R 2.229
+  rate-constant: {A: 6.3e-12, b: 0.0, Ea: 0.0}
+- equation: O(1S) + N2O => O(1D) + N2O  # R 2.230
+  rate-constant: {A: 3.1e-12, b: 0.0, Ea: 0.0}
+- equation: O(1S) + O2(a1) => O(1D) + O2(b1)  # R 2.231
+  rate-constant: {A: 3.6e-11, b: 0.0, Ea: 0.0}
+- equation: O(1S) + O2(a1) => O + O + O  # R 2.232
+  rate-constant: {A: 3.4e-11, b: 0.0, Ea: 0.0}
+- equation: O(1S) + O2(a1) => O + O2(a1)  # R 2.233
+  rate-constant: {A: 1.3e-10, b: 0.0, Ea: 0.0}
+- equation: O(1S) + O => O(1D) + O  # R 2.234
+  rate-constant: {A: 5.0e-11, b: 0.0, Ea: 301}
 
+# ========================================
+#   Air neutral mechanism
+# ========================================
 - equation: N + O2 <=> NO + O  # A78
   rate-constant: {A: 1.1e-14, b: 1.0, Ea: 3150}
 - equation: N + O3 <=> NO + O2  # A79
@@ -799,165 +790,12 @@ reactions:
   rate-constant: {A: 1.0e-31, b: -0.5, Ea: -604}
   efficiencies: {N2: 1.0, O2: 1.0}
 
-# ==============================================
-#              Popov ion chemistry
-# ==============================================
-# - equation: N2^+ + N2 + M => N4^+ + M  # C1 K165 will not converge if set to reversible!
-#   type: three-body
-#   rate-constant: {A: 5.0e-29, b: 0.0, Ea: 0.0}
-#   efficiencies: {N2: 1.0, O2: 1.0}
-# - equation: N4^+ + E <=> N2(C3) + N2  # C2 K29 N2 instead of N2(C3)
-#   type: electron-temperature
-#   rate-constant: {A: 3.46e-05, b: -0.5, Ea-T: 0.0, Ea-Te: 0.0}
-# - equation: N4^+ + O2 => O2^+ + 2 N2  # C3 K222
-#   rate-constant: {A: 2.5e-10, b: 0.0, Ea: 0.0}
-- equation: N2^+ + O2 => O2^+ + N2  # C4 K197 different rate is used from Kossyi Use Kossyi instead
-  rate-constant: {A: 1.04e-09, b: -0.5, Ea: 0.0}
-# - equation: O2^+ + N2 + N2 => N2O2^+ + N2  # C5 K168
-#   rate-constant: {A: 8.1e-26, b: -2.0, Ea: 0.0}
-# - equation: N2O2^+ + O2 => O4^+ + N2  # C6 K232
-#   rate-constant: {A: 1.0e-09, b: 0.0, Ea: 0.0}
-# - equation: N2O2^+ + N2 => O2^+ + N2 + N2  # C7 K231
-#   rate-constant: {A: 1.48e+07, b: -5.3, Ea: 2357}
-# - equation: O2^+ + O2 + O2 => O4^+ + O2  # C8 K167
-#   rate-constant: {A: 2.028e-22, b: -3.2, Ea: 0.0}
-# - equation: O4^+ + O2 => O2^+ + O2 + O2  # C9 K227
-#   rate-constant: {A: 2.673e+04, b: -4.0, Ea: 5030}
-# - equation: O2^+ + E => O + O  # C10 K40
-#   type: electron-temperature
-#   rate-constant: {A: 6.0e-05, b: -1.0, Ea-T: 0.0, Ea-Te: 0.0}
-  # rate-constant: {A: 1.057e-05, b: -0.7, Ea-T: 0.0, Ea-Te: 0.0}
-# - equation: O4^+ + E => O2 + O2  # C11 K30
-#   type: electron-temperature
-#   rate-constant: {A: 2.42e-05, b: -0.5, Ea-T: 0.0, Ea-Te: 0.0}
-- equation: O4^+ + E => O + O + O2  # C11
-  type: electron-temperature
-  rate-constant: {A: 6.49e-05, b: -0.48, Ea-T: 0.0, Ea-Te: 0.0}
-# - equation: E + O2 + O2 <=> O2^- + O2  # C12 K45 the reverse is important (popov miss the reverse)
-  # type: electron-temperature
-  # rate-constant: {A: 4.2e-27, b: -1.0, Ea-T: -100, Ea-Te: 700}
-# - equation: O2^- + O2 + O2 => O2 + O4^-  # C13 K234 the rate in Popov is the same as C8
-  # rate-constant: {A: 2.028e-22, b: -3.2, Ea: 0.0} # Popov
-  # rate-constant: {A: 1.05e-28, b: 0.0, Ea: 0.0} # Kossyi
-# - equation: O4^- + O2 => O2^- + 2 O2  # C14 K262
-#   rate-constant: {A: 1.0e-10, b: 0.0, Ea: 1044}
-# - equation: O4^- + M => O2^- + O2 + M  # C14 Kossyi(262)
-#   type: three-body
-#   rate-constant: {A: 1.0e-10, b: 0.0, Ea: 1044}
-#   efficiencies: {N2: 1.0, O2: 1.0}
-# - equation: O2^- + O => O3 + E  # C15 K237?
-#   rate-constant: {A: 1.5e-10, b: 0.0, Ea: 0.0}
-- equation: O2^- + O3 => O3^- + O2  # C16 K238
-  rate-constant: {A: 4.0e-10, b: 0.0, Ea: 0.0}
-- equation: O4^- + O => O3^- + O2  # C17 K263
-  rate-constant: {A: 4.0e-10, b: 0.0, Ea: 0.0}
-# - equation: O3^- + O => O2 + O2 + E  # C18 K?
-#   rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
-# - equation: O3^- + O => O2^- + O2  # C19 R41(Bak2015Reduced) K247
-#   rate-constant: {A: 3.2e-10, b: 0.0, Ea: 0.0}
-# - equation: O2^- + O2^+ + O2 => 2 O + 2 O2  # C20 R47(Bak2015Reduced)
-#   rate-constant: {A: 3.118e-19, b: -2.5, Ea: 0.0}
-# - equation: O2^- + O2^+ + M => O2 + O2 + M  # C20 R49 (type 5)
-#   type: three-body
-#   rate-constant: {A: 3.118e-19, b: -2.5, Ea: 0.0}
-#   efficiencies: {N2: 1.0, O2: 1.0, N: 1.0, O: 1.0}
-- equation: O2^- + O4^+ + O2 => 2 O + 3 O2  # C21
-  rate-constant: {A: 3.118e-19, b: -2.5, Ea: 0.0}
-- equation: O4^- + O2^+ + O2 => 2 O + 3 O2  # C22
-  rate-constant: {A: 3.118e-19, b: -2.5, Ea: 0.0}
-- equation: O4^- + O4^+ + O2 => 2 O + 4 O2  # C23
-  rate-constant: {A: 3.118e-19, b: -2.5, Ea: 0.0}
-
 # =========================================
-#        Reactions for glow discharge
+#        Reduced ion mechanism
 # =========================================
-- equation: O2^+ + E => O + O  # Bak(R10) Kossyi(40) Popov C10
+- equation: O2^+ + E => O + O  # R 2.252
   type: electron-temperature
-  rate-constant: {A: 6.0e-5, b: -1.0, Ea-T: 0.0, Ea-Te: 0.0}
-- equation: E + O2 + O2 => O2^- + O2  # Bak(R11) Kossyi(45) Popov C12
+  rate-constant: {A: 6.0e-4, b: -1.0, Ea-T: 0.0, Ea-Te: 0.0}
+- equation: N2^+ + E => N + N  # R 2.253
   type: electron-temperature
-  rate-constant: {A: 4.2e-27, b: -1.0, Ea-T: -100, Ea-Te: 700}
-- equation: O2^- + O => O3 + E  # Bak(R12) Kossyi(66) Popov C15
-  rate-constant: {A: 1.5e-10, b: 0.0, Ea: 0.0}
-- equation: O^- + O => O2 + E  # Bak(R13) Kossyi(68)
-  rate-constant: {A: 5.0e-10, b: 0.0, Ea: 0.0}
-- equation: O3^- + O => O2 + O2 + E  # Bak(R14) Kossyi(70) Popov C18
-  rate-constant: {A: 3.0e-10, b: 0.0, Ea: 0.0}
-- equation: O2^- + N2 => O2 + E + N2  # Bak(R15) Kossyi(56)
-  rate-constant: {A: 1.097e-13, b: 0.5, Ea: 4990}
-- equation: O2^- + O2 => O2 + E + O2  # Bak(R16) Kossyi(57)
-  rate-constant: {A: 1.559e-11, b: 0.5, Ea: 5590}
-- equation: N2^+ + N2 + N2 => N4^+ + N2  # Bak(R31) Kossyi(165) Popov C1
-  rate-constant: {A: 5.0e-29, b: 0.0, Ea: 0.0}
-- equation: O2^+ + N2 + N2 => N2O2^+ + N2  # Bak(R32) Kossyi(168) Popov C5
-  rate-constant: {A: 8.1e-26, b: -2.0, Ea: 0.0}
-- equation: O2^+ + O2 + O2 => O4^+ + O2  # Bak(R33) Kossyi(167) Popov C8
-  rate-constant: {A: 2.028e-22, b: -3.2, Ea: 0.0}
-- equation: N4^+ + O2 => O2^+ + N2 + N2  # Bak(R34) Kossyi(222) Popov C3
-  rate-constant: {A: 2.5e-10, b: 0.0, Ea: 0.0}
-- equation: O4^+ + N2 => N2O2^+ + O2  # Bak(R35) Kossyi(226)
-  rate-constant: {A: 2.957e-18, b: 2.5, Ea: 2650}
-- equation: O4^+ + O2 => O2^+ + O2 + O2  # Bak(R36) Kossyi(227) Popov C9
-  rate-constant: {A: 2.673e+04, b: -4.0, Ea: 5030}
-- equation: N2O2^+ + N2 => O2^+ + N2 + N2  # Bak(R37) Kossyi(231) Popov C7
-  rate-constant: {A: 1.48e+07, b: -5.3, Ea: 2357}
-- equation: N2O2^+ + O2 => O4^+ + N2  # Bak(R38) Kossyi(232) Popov C6
-  rate-constant: {A: 1.0e-09, b: 0.0, Ea: 0.0}
-- equation: O2^- + O2 + M => O4^- + M  # Bak(R39) Kossyi(234) Popov C13
-  type: three-body
-  rate-constant: {A: 1.05e-28, b: -1.0, Ea: 0.0}
-  efficiencies: {N2: 1.0, O2: 1.0}
-- equation: O2^- + O => O2 + O^-  # Bak(R40) Kossyi(237)
-  rate-constant: {A: 3.3e-10, b: 0.0, Ea: 0.0}
-- equation: O3^- + O => O2^- + O2  # Bak(R41) Kossyi(247) Popov C19
-  rate-constant: {A: 3.2e-10, b: 0.0, Ea: 0.0}
-- equation: O^- + O2 + M => O3^- + M  # Bak(R42) Kossyi(235)
-  type: three-body
-  rate-constant: {A: 3.3e-28, b: -1.0, Ea: 0.0}
-  efficiencies: {N2: 1.0, O2: 1.0}
-- equation: O4^- + M => O2^- + O2 + M  # Bak(R43) Kossyi(262) Popov C14
-  type: three-body
-  rate-constant: {A: 1.0e-10, b: 0.0, Ea: 1044}
-  efficiencies: {N2: 1.0, O2: 1.0}
-
-# ========================================================
-#  Kossyi 2.7 Recombination of positive and negative ions
-# ========================================================
-- equation: O2^- + O2^+ => O2 + O2  # Bak(R44) (type 1)
-  rate-constant: {A: 3.464e-06, b: -0.5, Ea: 0.0}
-- equation: O^- + O2^+ => O + O2  # Bak(R45) (type 1)
-  rate-constant: {A: 3.464e-06, b: -0.5, Ea: 0.0}
-- equation: O3^- + O2^+ => O3 + O2  # Bak(R46) (type 1)
-  rate-constant: {A: 3.464e-06, b: -0.5, Ea: 0.0}
-- equation: O2^- + O2^+ => O2 + O + O  # Bak(R47) (type 2 & 3)
-  rate-constant: {A: 1.0e-07, b: 0.0, Ea: 0.0}
-- equation: O3^- + O2^+ => O3 + O + O  # Bak(R48) (type 2 & 3)
-  rate-constant: {A: 1.0e-07, b: 0.0, Ea: 0.0}
-- equation: O2^- + O2^+ + M => O2 + O2 + M  # Bak(R49) (type 5) Popov C20
-  type: three-body
-  rate-constant: {A: 3.118e-19, b: -2.5, Ea: 0.0}
-  efficiencies: {N2: 1.0, O2: 1.0, N: 1.0, O: 1.0}
-
-# ==============================================
-#    Additional reactions for spark discharge
-# ==============================================
-- equation: N2^+ + E => N + N  # R53 Kossyi(38)
-  type: electron-temperature
-  rate-constant: {A: 4.85e-06, b: -0.5, Ea-T: 0.0, Ea-Te: 0.0}
-- equation: N2^+ + E <=> N + N(2D)  # R54 Kossyi(39)
-  type: electron-temperature
-  rate-constant: {A: 3.46e-06, b: -0.5, Ea-T: 0.0, Ea-Te: 0.0}
-- equation: N4^+ + E <=> N2(C3) + N2 # R55 Kossyi (29) Popov C2
-  type: electron-temperature
-  rate-constant: {A: 3.46e-5, b: -0.5, Ea-T: 0.0, Ea-Te: 0.0}
-- equation: NO^+ + E <=> N(2D) + O # R56 Kossyi (41)
-  type: electron-temperature
-  rate-constant: {A: 2.08e-3, b: -1.5, Ea-T: 0.0, Ea-Te: 0.0}
-- equation: N2(A3) + N2(ap) => N4^+ + E # R57 Kossyi (25)
-  rate-constant: {A: 5.00e-11, b: 0.0, Ea: 0.0}
-- equation: N2(ap) + N2(ap) => N4^+ + E # R58 Kossyi (26)
-  rate-constant: {A: 2.00e-10, b: 0.0, Ea: 0.0}
-- equation: N4^+ + N2 => N2^+ + 2 N2 # R72 Kossyi(221) special formula
-  rate-constant: {A: 3.80e-15, b: 0.0, Ea: 0.0}
-- equation: O2^+ + NO => NO^+ + O2 # R73 Kossyi (208)
-  rate-constant: {A: 4.40e-10, b: 0.0, Ea: 0.0}
+  rate-constant: {A: 4.85e-05, b: -0.5, Ea-T: 0.0, Ea-Te: 0.0}
