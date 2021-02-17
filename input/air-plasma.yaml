@@ -271,7 +271,7 @@ species:
       1.26755831e+04, -40.8823374]
   transport:
     model: gas
-    geometry: linear
+    geometry: nonlinear
     diameter: 4.1
     well-depth: 180.0
     rotational-relaxation: 2.0
