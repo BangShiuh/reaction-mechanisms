@@ -564,47 +564,47 @@ reactions:
 - equation: N2(v10) + N <=> N2(v9) + N
   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
 
-- equation: N2(v1) + N2 <=> N2 + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v2) + N2 <=> N2(v1) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v3) + N2 <=> N2(v2) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v4) + N2 <=> N2(v3) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v5) + N2 <=> N2(v4) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v6) + N2 <=> N2(v5) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v7) + N2 <=> N2(v6) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v8) + N2 <=> N2(v7) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v9) + N2 <=> N2(v8) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v10) + N2 <=> N2(v9) + N2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v1) + N2 <=> N2 + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v2) + N2 <=> N2(v1) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v3) + N2 <=> N2(v2) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v4) + N2 <=> N2(v3) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v5) + N2 <=> N2(v4) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v6) + N2 <=> N2(v5) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v7) + N2 <=> N2(v6) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v8) + N2 <=> N2(v7) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v9) + N2 <=> N2(v8) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v10) + N2 <=> N2(v9) + N2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
 
-- equation: N2(v1) + O2 <=> N2 + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v2) + O2 <=> N2(v1) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v3) + O2 <=> N2(v2) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v4) + O2 <=> N2(v3) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v5) + O2 <=> N2(v4) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v6) + O2 <=> N2(v5) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v7) + O2 <=> N2(v6) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v8) + O2 <=> N2(v7) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v9) + O2 <=> N2(v8) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
-- equation: N2(v10) + O2 <=> N2(v9) + O2
-  rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v1) + O2 <=> N2 + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v2) + O2 <=> N2(v1) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v3) + O2 <=> N2(v2) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v4) + O2 <=> N2(v3) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v5) + O2 <=> N2(v4) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v6) + O2 <=> N2(v5) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v7) + O2 <=> N2(v6) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v8) + O2 <=> N2(v7) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v9) + O2 <=> N2(v8) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
+# - equation: N2(v10) + O2 <=> N2(v9) + O2
+#   rate-constant: {A: 1.0, b: 0.0, Ea: 0.0}
 
 # ===============================================
 #   Vibrational exchange (nitrogen) up-pumping
